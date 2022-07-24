@@ -2,11 +2,11 @@ import style from './style.module.scss';
 
 const Login=()=>{
     return(
-        <form className='loginForm'>
+        <form className={style.loginForm}>
              <h2>This is the Login</h2>
-            <input type='text' placeholder='enter username'/>
-            <input type='text' placeholder='enter password'/>
-            <button type='submit'>Sign In</button>
+            <input className={style.userNameInput} type='text' placeholder='enter username'/>
+            <input className={style.passwordInput} type='text' placeholder='enter password'/>
+            <button className={style.submitButton} type='submit'>Sign In</button>
            
         </form>
     )
