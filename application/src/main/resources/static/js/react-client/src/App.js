@@ -10,6 +10,7 @@ const App = () => {
    <BrowserRouter>
    <Header/>
    <div className={style.App}>
+  
     <AppRouter/>
    </div>
    <Footer/>

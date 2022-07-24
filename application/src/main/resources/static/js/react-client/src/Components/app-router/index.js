@@ -1,13 +1,12 @@
 import { Route, Switch } from 'react-router-dom';
 
-import EventScreen from ''
-import HomeScreen from '../../Pages/home-screen';
-import NewsScreen from '../../Pages/news-screen';
-import EventScreen from "../../Pages/event-screen";
+import AboutScreen from '../../Pages/about-screen';
 import AccountCreateScreen from '../../Pages/account-create-screen';
 import AccountScreen from '../../Pages/account-screen';
-import AboutScreen from '../../Pages/about-screen';
+import EventScreen from "../../Pages/event-screen";
 import FAQScreen from '../../Pages/faq-screen';
+import HomeScreen from '../../Pages/home-screen';
+import NewsScreen from '../../Pages/news-screen';
 
 const AppRouter=()=>{
     
