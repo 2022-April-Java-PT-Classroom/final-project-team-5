@@ -1,4 +1,7 @@
 package org.wecancodeit.serverside.repository;
 
-public interface UserRepo {
+import org.springframework.data.repository.CrudRepository;
+import org.wecancodeit.serverside.model.User;
+
+public interface UserRepo extends CrudRepository <User, Long>{
 }
