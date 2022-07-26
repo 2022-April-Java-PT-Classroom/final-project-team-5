@@ -18,5 +18,36 @@ public class CommentController {
     private CommentRepo commentRepo;
 
     @GetMaping("/api/comment")
-    public Collection<CommentCollection> get
+    public Collection<CommentCollection> getUserNames(){
+        return (Collection<CommentCollection>) userNameRepo.findAll();
+    }
+
+    @PostMapping("/api/users/add-user")
+    public Collection<UserName> addUsers(@RequestBody String body) throws JSONException {
+        JSONObject newUser = new JSONObject(body);
+        String userName = newUser.getString("name");
+
+        return (Collection<UserName>) userNameRepo.findAll();
+    }
+
+    @PutMapping("/api/usesr/{id}/select-user")
+    public Collection<UserName> selectUser(@PathVariable Long id, @RequestBody String body) throws JSONException {
+        JSONObject newUser = new JSONObject(body);
+        String userName = newUser.getString("name");
+        Optional<UserName> userNameToSelectOpt = userNameRepository.findById(id);
+        if(userNameToSelectOpt.isPresent()) {
+            userNameToSelectOpt.get();
+            userNameRepo.save(userNameToSelectOpt.get());
+
+        }
+
+        return (Collection<UserName>) userNameRepo.findAll();
+    }
+
+    @DeleteMapping("/api/users/{id}/delete-user")
+    public Collection<UserName> deleteUsers(@PathVariable Long id) throws JSONException {
+        Optional<UserName> userNamesToRemoveOpt = userNameRepo.findById(id);
+        userNamesToRemoveOpt.ifPresent(userName -> userNameRepo.delete(userName));
+        return (Collection<UserName>) userNameRepo.findAll();
+    }
 }

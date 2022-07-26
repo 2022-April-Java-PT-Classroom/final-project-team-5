@@ -13,7 +13,7 @@ public class Comment {
     private String comment;
     private String post;
     private String topic;
-    private String user;
+    private String userName;
 
     public Long getId() {
         return id;
@@ -39,11 +39,11 @@ public class Comment {
 
     }
 
-    public Comment(Long id, String comment, String post, String topic, String user) {
+    public Comment(Long id, String comment, String post, String topic, String userName) {
         this.id = id;
         this.comment = comment;
         this.post = post;
         this.topic = topic;
-        this.user = user;
+        this.user = userName;
     }
 }
