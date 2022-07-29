@@ -11,8 +11,9 @@ public class Comment {
     @GeneratedValue
     private Long id;
     private String comment;
+    @ManytoMany
     private String post;
-    private String topic;
+    @ManytoOne
     private String userName;
 
     public Long getId() {
@@ -27,10 +28,6 @@ public class Comment {
         return post;
     }
 
-    public String getTopic() {
-        return topic;
-    }
-
     public String getUser() {
         return user;
     }
@@ -43,7 +40,6 @@ public class Comment {
         this.id = id;
         this.comment = comment;
         this.post = post;
-        this.topic = topic;
         this.user = userName;
     }
 }
