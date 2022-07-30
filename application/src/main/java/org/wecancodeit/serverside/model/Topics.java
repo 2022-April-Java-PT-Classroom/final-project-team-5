@@ -7,7 +7,7 @@ import javax.persistence.ManyToMany;
 import java.util.Collection;
 
 @Entity
-public class Topic {
+public class Topics {
 
     @Id
     @GeneratedValue
@@ -21,9 +21,9 @@ public class Topic {
     public String getTopicName() {
         return topicName;
     }
-    public Topic(){}
+    public Topics(){}
 
-    public Topic(String topicName) {
+    public Topics(String topicName) {
         this.topicName = topicName;
     }
 }
