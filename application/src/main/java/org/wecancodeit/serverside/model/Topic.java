@@ -18,12 +18,10 @@ public class Topic {
     @ManyToMany
     private Collection<Event> events;
 
-    public String getTopicName() {
-        return topicName;
-    }
     public Topic(){}
 
     public Topic(String topicName) {
         this.topicName = topicName;
     }
+
 }
