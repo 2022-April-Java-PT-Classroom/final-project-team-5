@@ -18,16 +18,8 @@ public class CommentController {
     private CommentRepo commentRepo;
 
     @GetMaping("/api/comment")
-    public Collection<CommentCollection> getUserNames(){
-        return (Collection<CommentCollection>) userNameRepo.findAll();
-    }
-
-    @PostMapping("/api/users/add-user")
-    public Collection<UserName> addUsers(@RequestBody String body) throws JSONException {
-        JSONObject newUser = new JSONObject(body);
-        String userName = newUser.getString("name");
-
-        return (Collection<UserName>) userNameRepo.findAll();
+    public Collection<Comment> getUserNames(){
+        return (Collection<CommentCollection>) commentRepo.findAll();
     }
 
     @PutMapping("/api/usesr/{id}/select-user")
