@@ -1,4 +1,9 @@
 package org.wecancodeit.serverside.repository;
 
-public interface EventRepo {
+import org.springframework.data.repository.CrudRepository;
+import org.wecancodeit.serverside.model.Event;
+
+public interface EventRepo extends CrudRepository<Event, Long> {
+
+    Event findEventByLocation(String eventLocation);
 }
