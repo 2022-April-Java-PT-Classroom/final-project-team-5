@@ -6,6 +6,7 @@ import javax.persistence.*;
 import java.util.Collection;
 import java.util.Objects;
 
+
 @Entity
 public class Event {
 
@@ -18,8 +19,9 @@ public class Event {
     private String eventDate;
     private String eventOrganizer;
     private int eventTime;
-    @ManyToMany(mappedBy = "eventsPosted")
-    @OneToMany(mappedBy = "eventsSelected")
+    //    @ManyToOne(mappedBy ="eventsPosted")
+    @ManyToMany(mappedBy = "eventsSelected")
+//    @ManyToMany(mappedBy = "events")
     @JsonIgnore
     private Collection<User> users;
 

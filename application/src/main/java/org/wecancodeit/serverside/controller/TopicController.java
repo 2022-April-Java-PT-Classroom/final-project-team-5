@@ -17,7 +17,7 @@ public class TopicController {
 
     @GetMapping("/topics")
     public Collection<Topic> getTopics(){return (Collection<Topic>) topicRepository.findAll();}
-
-    @GetMapping("/topic")
-    public Optional<Topic> getTopics(@PathVariable String topicName){return topicRepository.findTopic(topicName);}
+//
+//    @GetMapping("/topic")
+//    public Optional<Topic> getTopics(@PathVariable String topicName){return topicRepository.findTopic(topicName);}
 }
