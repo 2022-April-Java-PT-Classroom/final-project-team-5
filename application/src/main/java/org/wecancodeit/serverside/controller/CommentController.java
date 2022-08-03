@@ -1,5 +1,6 @@
 package org.wecancodeit.serverside.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.wecancodeit.serverside.model.Comment;
@@ -12,7 +13,7 @@ import java.util.Optional;
 public class CommentController {
 
     @Resource
-    private CommentRepository commentRepo;
+    private CommentRepo commentRepo;
 
     @GetMapping("/comments")
     public Collection<Comment> getComments(){

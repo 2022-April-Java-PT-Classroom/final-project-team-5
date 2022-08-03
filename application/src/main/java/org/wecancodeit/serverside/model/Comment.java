@@ -21,7 +21,7 @@ public class Comment {
     @ManyToMany
     private Collection<Event> events;
 
-    public Comment {}
+    public Comment() {}
 
     public Comment (String commentName) {
 
