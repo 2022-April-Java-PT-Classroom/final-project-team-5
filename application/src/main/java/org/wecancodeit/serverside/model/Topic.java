@@ -15,8 +15,8 @@ public class Topic {
 
 //    @ManyToMany
 //    private Collection<Post> posts;
-//    @ManyToMany
-//    private Collection<Event> events;
+    @ManyToMany
+    private Collection<Event> events;
 
     public Topic(){}
 

@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 
+import { Axios } from 'axios';
 import style from './style.module.scss';
 
 const EventScreen=()=>{
@@ -9,7 +10,7 @@ const EventScreen=()=>{
 
   useEffect(() => {
     const fetchEvents = async () => {
-      const result = await Axios('http://localhost:8080/api/events');
+      const result = await Axios('http://localhost:8080/events');
       setEvents(result.data);
     }
     
@@ -25,7 +26,17 @@ const EventScreen=()=>{
 
   
   return(
-    <h2>This is the Event Screen</h2>
-  )  
+    // loadingEvents ? <h2>Loading...</h2> :
+    <div>
+      <p>Hello</p>
+    
+      {events.map(events => (
+        <div key={events.id}>
+    <h2>{events.eventLocation}</h2>
+    </div>
+  ))}  
+    <p>Hello</p>
+  </div>
+  );
 }
 export default EventScreen
