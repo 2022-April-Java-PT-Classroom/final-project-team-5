@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Axios } from 'axios';
+import Axios from 'axios';
 import style from './style.module.scss';
 
 const EventScreen=()=>{
@@ -10,8 +10,9 @@ const EventScreen=()=>{
 
   useEffect(() => {
     const fetchEvents = async () => {
-      const result = await Axios('http://localhost:8080/events');
+      const result = await Axios('http://localhost:8080/api/events');
       setEvents(result.data);
+      console.log(result.data)
     }
     
     if(events) {
@@ -24,9 +25,11 @@ const EventScreen=()=>{
     return () => clearTimeout(timer);
   }, [events]);  
 
+
+  console.log(events);
   
   return(
-    // loadingEvents ? <h2>Loading...</h2> :
+    loadingEvents ? <h2>Loading...</h2> :
     <div>
       <p>Hello</p>
     

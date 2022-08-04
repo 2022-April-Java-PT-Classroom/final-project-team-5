@@ -17,7 +17,7 @@ public class EventController {
     @Resource
     private EventRepo eventRepo;
 
-    @GetMapping("/events")
+    @GetMapping("/api/events")
     public Collection<Event> getEvents(){
         return (Collection<Event>) eventRepo.findAll();
     }
