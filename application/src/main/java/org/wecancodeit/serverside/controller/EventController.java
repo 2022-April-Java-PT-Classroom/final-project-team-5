@@ -1,6 +1,7 @@
 package org.wecancodeit.serverside.controller;
 
 
+import org.springframework.data.repository.query.parser.Part;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,8 +23,8 @@ public class EventController {
         return (Collection<Event>) eventRepo.findAll();
     }
 
-//    @GetMapping("/events/{eventLocation}")
-//    public Event getEventLocation(@PathVariable String eventLocation){
-//        return eventRepo.findEventByLocation(eventLocation).get();
-//    }
+    @GetMapping("/api/events/{eventLocation}")
+    public Event getEventLocation(@PathVariable String eventLocation){
+        return eventRepo.findByEventLocation(eventLocation).get();
+    }
 }

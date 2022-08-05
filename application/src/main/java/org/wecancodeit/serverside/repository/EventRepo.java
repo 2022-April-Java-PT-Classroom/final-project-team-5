@@ -8,6 +8,6 @@ import java.util.Optional;
 
 public interface EventRepo extends CrudRepository<Event, Long> {
 
-//    Optional<Event> findEventByLocation(String eventLocation);
+    Optional<Event> findByEventLocation(String eventLocation);
 
 }
