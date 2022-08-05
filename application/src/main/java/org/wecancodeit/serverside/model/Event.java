@@ -18,7 +18,7 @@ public class Event {
     private String eventLocation;
     private String eventDate;
     private String eventOrganizer;
-    private int eventTime;
+    private String eventTime;
 //    @ManyToOne(mappedBy ="eventsPosted")
     @ManyToMany(mappedBy = "eventsSelected")
     @JsonIgnore
@@ -32,7 +32,7 @@ public class Event {
 
     }
 
-    public Event(String eventTitle, String eventDescription, String eventLocation, String eventDate, String eventOrganizer, int eventTime){
+    public Event(String eventTitle, String eventDescription, String eventLocation, String eventDate, String eventOrganizer, String eventTime){
         this.eventTitle = eventTitle;
         this.eventDescription = eventDescription;
         this.eventLocation = eventLocation;
@@ -65,7 +65,7 @@ public class Event {
         return eventOrganizer;
     }
 
-    public int getEventTime(){
+    public String getEventTime(){
         return eventTime;
     }
 

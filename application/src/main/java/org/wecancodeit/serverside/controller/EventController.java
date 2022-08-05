@@ -33,13 +33,19 @@ public class EventController {
     @PostMapping("/api/events/add-event")
     public Collection <Event> addEvent(@RequestBody String body) throws JSONException {
         JSONObject newEvent = new JSONObject(body);
-        String newEventTitle = newEvent.getString("eventTitle");
-        Optional<Event> eventToAddOpt = eventRepo.findByEventLocation(newEventTitle);
+        String eventTitle = newEvent.getString("eventTitle");
+//        Optional<Event> eventToAddOpt = eventRepo.findByEventLocation(eventTitle);
+        String eventDescription = newEvent.getString("eventDescription");
+        String eventLocation = newEvent.getString("eventLocation");
+        String eventDate = newEvent.getString("eventDate");
+        String eventOrganizer = newEvent.getString("eventOrganizer");
+        String eventTime = newEvent.getString("eventTime");
 
-        if(eventToAddOpt.isEmpty()) {
-            Event eventToAdd = new Event();
+
+//        if(eventToAddOpt.isEmpty()) {
+            Event eventToAdd = new Event(eventTitle, eventDescription,eventLocation,eventDate,eventOrganizer,eventTime);
             eventRepo.save(eventToAdd);
-        }
+//        }
         return (Collection<Event>) eventRepo.findAll();
     }
 }
