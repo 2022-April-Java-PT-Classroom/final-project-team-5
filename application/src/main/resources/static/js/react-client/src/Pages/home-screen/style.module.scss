@@ -3,12 +3,36 @@ body {
     
 }
 
-.container {
+
+.eventContainer{
+    float: left;
+    text-align: center;
+    background-color: #E8B7D4;
+    max-width: 30rem;
+    width: 90%;
+    -webkit-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
+    box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
+}
+
+.mainContainer {
+    
    text-align: center;
    background-color: #E8B7D4;
    margin: 2rem auto;
-   max-width: 90rem;
+   max-width: 40rem;
    width: 90%;
+   -webkit-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
+   -moz-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
+   box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
+}
+
+.newsContainer{
+    float: right;
+    text-align: center;
+    background-color: #E8B7D4;
+    max-width: 30rem;
+    width: 90%;
    -webkit-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
    -moz-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
    box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);

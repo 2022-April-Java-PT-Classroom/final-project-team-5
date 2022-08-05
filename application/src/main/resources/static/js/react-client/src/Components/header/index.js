@@ -6,10 +6,14 @@ const Header=()=>{
         <div>
             <header className={style.header}>
                 <img src="https://i.imgur.com/HQSTt1W.gif" alt="AgapeLogo.gif" className={style.logo} ></img>
-                <h2>Agape</h2>
-                <div className={style.Login}>
-                    <Login/>
-                </div>
+                <title>Agape</title>
+                <nav className={style.nav}>
+                    <ul className={style.navList}>
+                        <li className={style.navListItem}>Events</li> 
+                        <li className={style.navListItem}>Topics</li>
+                        <li className={style.navListItem}>Profile</li>
+                    </ul>
+                </nav>
             </header>
         </div>
     )

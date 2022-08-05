@@ -8,11 +8,17 @@ const HomeScreen=()=>{
     return(
        
         <div className={style.HomeScreen}>
-            <div className={style.container}>
+            <div className={style.mainContainer}>
                 <h2>This is the HomeScreen</h2>
-                <News/>
-                <Event/>
+                
                 <Post/>
+            </div>
+            <div className={style.eventContainer}>
+                <h2>Events</h2>
+                <Event/>
+            </div>
+            <div className={style.newsContainer}>
+                <News/>
             </div>
         </div>
     )
