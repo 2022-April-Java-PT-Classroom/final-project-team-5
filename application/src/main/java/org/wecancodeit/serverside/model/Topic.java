@@ -11,10 +11,11 @@ public class Topic {
 
     @Id
     @GeneratedValue
+    private Long id;
     private String topicName;
 
-    @ManyToMany
-    private Collection<Post> posts;
+//    @ManyToMany
+//    private Collection<Post> posts;
     @ManyToMany
     private Collection<Event> events;
 
@@ -22,6 +23,10 @@ public class Topic {
 
     public Topic(String topicName) {
         this.topicName = topicName;
+    }
+
+    public String getTopicName(){
+        return topicName;
     }
 
 }
