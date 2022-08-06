@@ -1,9 +1,6 @@
 package org.wecancodeit.serverside.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.Collection;
 
 @Entity
@@ -14,8 +11,10 @@ public class Topic {
     private Long id;
     private String topicName;
 
-//    @ManyToMany
-//    private Collection<Post> posts;
+
+    @OneToMany
+    private Collection<Post> posts;
+
     @ManyToMany
     private Collection<Event> events;
 
