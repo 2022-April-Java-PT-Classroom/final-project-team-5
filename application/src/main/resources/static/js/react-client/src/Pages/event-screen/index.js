@@ -45,12 +45,12 @@ const EventScreen=()=>{
       eventTitle: addEventState.eventTitle
     }
 
-    // Axios.post('http://localhost:8080/api/events/add-event', userData).
-    // then((response) => {
-    //   console.log(response.status);
-    //   console.log(response.data);
-    //   setEvents(response.data);
-    // })
+    Axios.post('http://localhost:8080/api/events/add-event', userData).
+    then((response) => {
+      console.log(response.status);
+      console.log(response.data);
+      setEvents(response.data);
+    })
   }
   
   return(
