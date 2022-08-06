@@ -17,18 +17,18 @@ public class PostController {
     private PostRepo postRepo;
 
 
-   @GetMapping("/post")
+   @GetMapping("api/post")
    public Collection<Post> getPost(){
        return (Collection<Post>) postRepo.findAll();
    }
 
-   @GetMapping("/post/{id}")
+   @GetMapping("api/post/{id}")
     public Post getPost(@PathVariable Long id) throws JSONException{
        Optional<Post> postOne = postRepo.findById(id);
        return postOne.get();
    }
 
-   @GetMapping("post/add-post")
+   @GetMapping("api/post/add-post")
     public Collection<Post> addPost(@RequestBody String body) throws JSONException{
        JSONObject newPost = new JSONObject(body);
        String bodyOfPost = newPost.getString("body of post");
@@ -41,9 +41,10 @@ public class PostController {
        return (Collection<Post>) postRepo.findAll();
    }
 
-   @DeleteMapping("/post/{id}/delete-post")
+   @DeleteMapping("api/post/{id}/delete-post")
     public Collection<Post> deletePost(@PathVariable Long id) throws JSONException{
        Optional<Post>postToRemove=postRepo.findById(id);
+
        if(postToRemove.isPresent()){
            postRepo.delete(postToRemove.get());
        }
