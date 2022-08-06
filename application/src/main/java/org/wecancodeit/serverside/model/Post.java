@@ -8,7 +8,6 @@ import java.util.Collection;
 public class Post {
 
     @Id@GeneratedValue
-
     public Long id;
     @Lob
     public String bodyOfPost;
@@ -31,6 +30,10 @@ public class Post {
         return bodyOfPost;
     }
 
+    public Topic getTopic(){
+        return topic;
+    }
+
     public Post(String post) {
         this.bodyOfPost = post;
     }
@@ -43,8 +46,6 @@ public class Post {
         return comments;
     }
 
-    public Topic getTopic() {
-        return topic;
-    }
+
 }
 

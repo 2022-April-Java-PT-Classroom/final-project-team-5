@@ -9,7 +9,7 @@ const App = () => {
   return (
    <BrowserRouter>
    <Header/>
-   <div className={style.App}>
+   <div className={style.pages}>
   
     <AppRouter/>
    </div>

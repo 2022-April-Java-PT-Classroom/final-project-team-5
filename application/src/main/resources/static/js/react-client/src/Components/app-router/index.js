@@ -17,7 +17,7 @@ const AppRouter=()=>{
             <Route exact path={"/event"} component={EventScreen}/>
             <Route exact path={"/account/create"} component={AccountCreateScreen}/>
             <Route exact path={"/account/:user"} component={AccountScreen}/>
-            <Route exact path={"/about"} component={AboutScreen}/>
+            <Route exact path={"/about-screen"} component={AboutScreen}/>
             <Route exact path={"/faq"} component={FAQScreen}/>
         </Switch>
     )
