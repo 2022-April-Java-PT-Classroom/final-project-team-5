@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Adam from '../../assets/Adam.png';
+import Adam from '../../assets/Adam.jpg';
 import Adrian from '../../assets/Adrian.png';
 import Dhana from '../../assets/Dhana.JPG';
 import Jamie from '../../assets/Jamie.png';
