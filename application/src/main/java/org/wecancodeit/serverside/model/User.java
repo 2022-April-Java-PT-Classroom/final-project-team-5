@@ -54,7 +54,7 @@ public class User {
 //    public Collection<Comment> getCommentsPosted() { return commentsPosted; }
 //    public Collection<Topic> getTopicsSelected() { return topicsSelected; }
 
-    public boolean isPasswordMatch( String enteredPassword ) { return enteredPassword == this.password; }
+    public boolean isPasswordMatch( String enteredPassword ) { return enteredPassword.equals(this.password); }
     public boolean isUserFriend( User user ) { return usersFriended.contains( user ); }
     public boolean isUserFollowing( User user ) { return usersFollowing.contains( user ); }
     public boolean isUserFollowedBy( User user ) { return usersFollowedBy.contains( user ); }

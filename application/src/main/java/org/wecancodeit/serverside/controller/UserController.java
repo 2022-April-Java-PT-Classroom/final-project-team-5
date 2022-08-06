@@ -21,15 +21,16 @@ public class UserController {
     @GetMapping("/api/users/{username}")
     public User getUserByName(@PathVariable String username){ return  userRepo.findByUsername(username).get(); }
 
-    @GetMapping("/api/users/login")
-    public Long userLogin(@RequestBody String body) throws JSONException{
+    @PostMapping("/api/users/login")
+    public boolean userLogin(@RequestBody String body) throws JSONException{
         JSONObject user = new JSONObject(body);
         String username = user.getString("username");
         Optional<User> userOpt = userRepo.findByUsername(username);
-        if (userOpt.isEmpty()){ return (long) -1; }
+        if (userOpt.isEmpty()){ return false; }
         String password = user.getString("password");
-        if (userOpt.get().isPasswordMatch(password)){ return userOpt.get().getId(); }
-        else { return (long) -1; }
+        User login = userOpt.get();
+        if (login.isPasswordMatch(password)){ return true; }
+        else { return false; }
     }
 
     @PostMapping("/api/users/create-account")

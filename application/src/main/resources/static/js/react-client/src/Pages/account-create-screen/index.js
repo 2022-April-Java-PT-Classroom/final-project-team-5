@@ -20,7 +20,6 @@ const AccountCreateScreen=()=>{
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     const newAccount = {
       username: userState.username,
       password: userState.password
@@ -34,8 +33,6 @@ const AccountCreateScreen=()=>{
       });
     } else if (newAccount.username !== ''){
       axios.post('http://localhost:8080/api/users/create-account', newAccount).then((response) => {
-        console.log(response.status);
-        console.log(response.data);
         setUserState({
           ...userState,
           password: '',
@@ -59,7 +56,7 @@ const AccountCreateScreen=()=>{
             value = {userState.password} 
             onChange = {handleChange}
             placeholder = 'Enter new password'/>
-          <button type = 'submit'>Create Account</button>   
+          <button className={style.submitButton} type='submit'>Create Account</button>   
           <h3>{userState.message}</h3>
         </form>
     )

@@ -9,11 +9,11 @@ const AccountScreen=()=>{
   const [loadingUser, setLoadingUser] = useState(true);
   const [user, setUser] = useState(null);
 
-  let {userName} = useParams();
+  let {username} = useParams();
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await Axios(`http://localhost:8080/users/{username}`);
+      const result = await Axios('http://localhost:8080/api/users/' + username);
       setUser(result.data);
     }
     if(user){
@@ -26,13 +26,13 @@ const AccountScreen=()=>{
   }, [user]);
 
   return(
-    <body className={style.body}>
+    <div className={style.body}>
       {loadingUser ? <h3>Finding Profile Info...</h3> : 
         <div className={style.userProfile}>
           <h3 className={style.username}>{user.username}</h3>
         </div>
       }
-    </body>
+    </div>
   )  
 }
 export default AccountScreen;
