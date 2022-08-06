@@ -6,21 +6,20 @@ import style from './style.module.scss';
 
 const HomeScreen=()=>{
     return(
-       
-        <div className={style.HomeScreen}>
-            <div className={style.mainContainer}>
-                <h2>This is the HomeScreen</h2>
-                
-                <Post/>
-            </div>
-            <div className={style.eventContainer}>
+        <main>
+          <div className={style.mainScreen}>
+            <div className={style.events}>
                 <h2>Events</h2>
                 <Event/>
             </div>
-            <div className={style.newsContainer}>
+            <div className={style.post}>
+                <Post/>
+            </div>
+            <div className={style.news}>
                 <News/>
             </div>
-        </div>
+         </div>
+        </main>
     )
 }
 export default HomeScreen

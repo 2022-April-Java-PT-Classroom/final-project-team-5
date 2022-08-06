@@ -1,40 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+
+:root {
+    --color-dark:#283747;
+    --color-light: #E5E7E9;
+    --color-lightbox: #ECF0F1;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
 body {
-    background-color: #BFB8DA;
-    
+    font-family: "Lato", sans-serif;
+    color: var(--color-dark);
+    background:var(--color-light);
+    overflow-x: hidden;
 }
 
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
 
-.eventContainer{
-    float: left;
+main {
+    position: relative;
+    top: 5.4rem;
+}
+
+.mainScreen{
+    display: grid;
+    grid-template-columns: 20rem auto 30rem;
+    column-gap: 2rem;
+    position: relative;
+}
+
+.events {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: var(--color-lightbox);
     text-align: center;
-    background-color: #E8B7D4;
-    max-width: 30rem;
-    width: 90%;
-    -webkit-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
-    -moz-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
-    box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
 }
 
-.mainContainer {
-    
-   text-align: center;
-   background-color: #E8B7D4;
-   margin: 2rem auto;
-   max-width: 40rem;
-   width: 90%;
-   -webkit-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
-   -moz-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
-   box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
-}
-
-.newsContainer{
-    float: right;
+.post {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: var(--color-lightbox);
     text-align: center;
-    background-color: #E8B7D4;
-    max-width: 30rem;
-    width: 90%;
-   -webkit-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
-   -moz-box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
-   box-shadow: 4px 17px 31px -14px rgba(0,0,0,0.75);
 }
 
+.news {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: var(--color-lightbox);
+    text-align: center;
+}
