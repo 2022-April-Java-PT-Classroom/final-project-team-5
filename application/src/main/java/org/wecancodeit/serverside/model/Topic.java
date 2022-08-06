@@ -11,6 +11,7 @@ public class Topic {
 
     @Id
     @GeneratedValue
+    private Long id;
     private String topicName;
 
 //    @ManyToMany
@@ -22,6 +23,10 @@ public class Topic {
 
     public Topic(String topicName) {
         this.topicName = topicName;
+    }
+
+    public String getTopicName(){
+        return topicName;
     }
 
 }

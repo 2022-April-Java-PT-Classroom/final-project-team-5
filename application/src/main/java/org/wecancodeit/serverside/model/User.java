@@ -18,7 +18,7 @@ public class User {
     private Set<User> usersFollowing;
     @ManyToMany
     private Set<User> usersFollowedBy;
-    @OneToMany
+    @OneToMany(mappedBy = "userPost")
     private Set<Event> eventsPosted;
     @ManyToMany
     private Set<Event> eventsSelected;
@@ -47,7 +47,7 @@ public class User {
     public Collection<User> getUsersFriended() { return usersFriended; }
     public Collection<User> getUsersFollowing() { return usersFollowing; }
     public Collection<User> getUsersFollowedBy() { return usersFollowedBy; }
-//    public Collection<Event> getEventsPosted() { return eventsPosted; }
+    public Collection<Event> getEventsPosted() { return eventsPosted; }
     public Collection<Event> getEventsSelected() { return eventsSelected; }
 //    public Collection<Post> getPostsPosted() { return postsPosted; }
 //    public Collection<Post> getPostsSelected() { return postsSelected; }
@@ -71,7 +71,7 @@ public class User {
     public boolean toggleUserFollowing( User user ) { return toggleItem( user, usersFollowing); }
     public boolean toggleUserFollowedBy( User user ) { return toggleItem( user, usersFollowedBy); }
 
-//    public boolean postEvent( Event event ) { return eventsPosted.add(event); }
+    public boolean postEvent( Event event ) { return eventsPosted.add(event); }
     public boolean toggleEventSelected( Event event ) { return toggleItem( event, eventsSelected ); }
 
 //    public boolean postPost( Post post ) { return postsPosted.add(post); }

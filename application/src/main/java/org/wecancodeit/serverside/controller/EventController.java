@@ -6,6 +6,7 @@ import org.json.JSONObject;
 import org.springframework.data.repository.query.parser.Part;
 import org.springframework.web.bind.annotation.*;
 import org.wecancodeit.serverside.model.Event;
+import org.wecancodeit.serverside.model.User;
 import org.wecancodeit.serverside.repository.EventRepo;
 
 import javax.annotation.Resource;
@@ -40,6 +41,7 @@ public class EventController {
         String eventDate = newEvent.getString("eventDate");
         String eventOrganizer = newEvent.getString("eventOrganizer");
         String eventTime = newEvent.getString("eventTime");
+
 
 
 //        if(eventToAddOpt.isEmpty()) {

@@ -15,7 +15,7 @@ public class Populator implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-
+//
         Event cause = new Event("The Cause", "Event Test", "Cleveland", "August 23, 2022", "Jane Doe", "8");
         eventRepo.save(cause);
     }

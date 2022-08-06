@@ -19,12 +19,15 @@ public class Event {
     private String eventDate;
     private String eventOrganizer;
     private String eventTime;
-//    @ManyToOne(mappedBy ="eventsPosted")
+    @ManyToOne
+    private User userPost;
     @ManyToMany(mappedBy = "eventsSelected")
     @JsonIgnore
     private Collection<User> users;
     @ManyToMany(mappedBy = "events")
     private Collection<Topic> topics;
+    @ManyToMany(mappedBy = "events")
+    private Collection<Comment> comments;
 
 
 
@@ -75,6 +78,14 @@ public class Event {
 
     public Collection<Topic> getTopics(){
         return topics;
+    }
+
+    public User getUserPost(){
+        return userPost;
+    }
+
+    public Collection<Comment> getComments(){
+        return comments;
     }
 
     @Override

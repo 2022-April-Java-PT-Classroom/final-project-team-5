@@ -4,6 +4,6 @@ import org.wecancodeit.serverside.model.Comment;
 
 import java.util.Optional;
 
-public interface CommentRepo extends CrudRepository <Comment, String> {
-    Optional<Comment> findComment(String commentName);
+public interface CommentRepo extends CrudRepository <Comment, Long> {
+
 }

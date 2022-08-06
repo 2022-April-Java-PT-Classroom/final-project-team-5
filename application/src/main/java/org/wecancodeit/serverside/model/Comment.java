@@ -1,31 +1,37 @@
 package org.wecancodeit.serverside.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
+import javax.persistence.*;
 import java.util.Collection;
 @Entity
 public class Comment {
 
     @Id
     @GeneratedValue
-    private String commentName;
+    private Long id;
+    private String commentContent;
 
     @ManyToMany
     private Collection<Comment> comments;
 
-    @ManyToMany
-    private Collection<Post> posts;
+//    @ManyToOne
+//    private Collection<Post> posts;
 
     @ManyToMany
     private Collection<Event> events;
 
+    @ManyToOne
+    private User userComment;
+
     public Comment() {}
 
-    public Comment (String commentName) {
+    public Comment (String commentContent, User userComment) {
 
-        this.commentName = commentName;
+        this.commentContent = commentContent;
+        this.userComment = userComment;
+    }
+
+    public User getUserComment(){
+        return userComment;
     }
 
 

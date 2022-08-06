@@ -6,6 +6,6 @@ import org.wecancodeit.serverside.model.Topic;
 import java.util.Optional;
 
 
-public interface TopicRepo extends CrudRepository <Topic, String> {
-//    Optional<Topic> findTopic(String topicName);
+public interface TopicRepo extends CrudRepository <Topic, Long> {
+    Optional<Topic> findByTopicName(String topicName);
 }

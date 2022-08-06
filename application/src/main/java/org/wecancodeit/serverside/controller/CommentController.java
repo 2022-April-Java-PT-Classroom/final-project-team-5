@@ -15,13 +15,13 @@ public class CommentController {
     @Resource
     private CommentRepo commentRepo;
 
-    @GetMapping("/comments")
+    @GetMapping("/api/comments")
     public Collection<Comment> getComments(){
 
         return (Collection<Comment>) commentRepo.findAll();
     }
 
-    @GetMapping("/comment")
-    public Optional<Comment> getComments(@PathVariable String commentName){
-        return commentRepo.findComment(commentName);}
+    @GetMapping("/api/comment/{id}")
+    public Optional<Comment> getComments(@PathVariable Long id){
+        return commentRepo.findById(id);}
 }
