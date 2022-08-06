@@ -6,5 +6,6 @@ import org.wecancodeit.serverside.model.Post;
 import java.util.Optional;
 
 public interface PostRepo extends CrudRepository<Post,Long> {
+    Optional<Post> findByBodyOfPost(String bodyOfPost);
 }
 
