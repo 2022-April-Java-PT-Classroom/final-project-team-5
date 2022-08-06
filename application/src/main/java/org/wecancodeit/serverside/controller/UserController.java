@@ -15,7 +15,7 @@ public class UserController {
     @Resource
     private UserRepo userRepo;
 
-    @GetMapping("/api/users/{id}")
+    @GetMapping("/api/users/id/{id}")
     public User getUserAccount(@PathVariable Long id){ return userRepo.findById(id).get(); }
 
     @GetMapping("/api/users/{username}")
