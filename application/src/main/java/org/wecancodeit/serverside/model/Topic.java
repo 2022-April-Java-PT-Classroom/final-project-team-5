@@ -11,8 +11,10 @@ public class Topic {
     private Long id;
     private String topicName;
 
+
     @OneToMany
     private Collection<Post> posts;
+
     @ManyToMany
     private Collection<Event> events;
 
