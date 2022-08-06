@@ -7,5 +7,5 @@ import java.util.Optional;
 
 
 public interface TopicRepo extends CrudRepository <Topic, String> {
-    Optional<Topic> findTopic(String topicName);
+//    Optional<Topic> findTopic(String topicName);
 }

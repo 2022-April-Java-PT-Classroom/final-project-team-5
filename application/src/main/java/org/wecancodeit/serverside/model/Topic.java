@@ -13,8 +13,8 @@ public class Topic {
     @GeneratedValue
     private String topicName;
 
-    @ManyToMany
-    private Collection<Post> posts;
+//    @ManyToMany
+//    private Collection<Post> posts;
     @ManyToMany
     private Collection<Event> events;
 
