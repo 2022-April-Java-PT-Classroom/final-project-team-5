@@ -1,4 +1,10 @@
 package org.wecancodeit.serverside.repository;
 
-public interface PostRepo {
+import org.springframework.data.repository.CrudRepository;
+import org.wecancodeit.serverside.model.Post;
+
+import java.util.Optional;
+
+public interface PostRepo extends CrudRepository<Post,Long> {
 }
+
