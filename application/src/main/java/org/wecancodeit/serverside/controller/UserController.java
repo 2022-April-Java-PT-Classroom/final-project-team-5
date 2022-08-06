@@ -15,13 +15,13 @@ public class UserController {
     @Resource
     private UserRepo userRepo;
 
-    @GetMapping("/users/{id}")
+    @GetMapping("/api/users/{id}")
     public User getUserAccount(@PathVariable Long id){ return userRepo.findById(id).get(); }
 
-    @GetMapping("/users/{username}")
+    @GetMapping("/api/users/{username}")
     public User getUserByName(@PathVariable String username){ return  userRepo.findByUsername(username).get(); }
 
-    @GetMapping("/users/login")
+    @GetMapping("/api/users/login")
     public Long userLogin(@RequestBody String body) throws JSONException{
         JSONObject user = new JSONObject(body);
         String username = user.getString("username");
@@ -32,7 +32,7 @@ public class UserController {
         else { return (long) -1; }
     }
 
-    @PostMapping("/users/create-account")
+    @PostMapping("/api/users/create-account")
     public boolean addUserAccount(@RequestBody String body) throws JSONException {
         JSONObject newUser = new JSONObject(body);
         String username = newUser.getString("username");

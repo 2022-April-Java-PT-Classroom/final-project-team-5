@@ -8,19 +8,19 @@ import java.util.Collection;
 public class Post {
 
     @Id@GeneratedValue
-
     public Long id;
 
     public String post;
 
     @ManyToOne
-    public Collection <User> users;
+    public User userPost;
 
     @ManyToMany
     public Collection<Comment> comments;
 
-    @OneToMany
-    public Collection<Topic> topics;
+    @ManyToOne
+    public Topic topic;
+
     public Post(){}
 
     public Long getId() {
@@ -31,8 +31,14 @@ public class Post {
         return post;
     }
 
+    public Topic getTopic(){
+        return topic;
+    }
+
     public Post(String post) {
         this.post = post;
     }
+
+
 }
 
