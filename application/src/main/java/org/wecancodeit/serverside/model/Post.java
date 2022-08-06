@@ -10,29 +10,41 @@ public class Post {
     @Id@GeneratedValue
 
     public Long id;
-
-    public String post;
+    @Lob
+    public String bodyOfPost;
 
     @ManyToOne
-    public Collection <User> users;
+    public User userPost;
 
     @ManyToMany
     public Collection<Comment> comments;
 
-    @OneToMany
-    public Collection<Topic> topics;
+    @ManyToOne
+    public Topic topic;
     public Post(){}
 
     public Long getId() {
         return id;
     }
 
-    public String getPost() {
-        return post;
+    public String getBodyOfPost() {
+        return bodyOfPost;
     }
 
     public Post(String post) {
-        this.post = post;
+        this.bodyOfPost = post;
+    }
+
+    public User getUserPost() {
+        return userPost;
+    }
+
+    public Collection<Comment> getComments() {
+        return comments;
+    }
+
+    public Topic getTopic() {
+        return topic;
     }
 }
 
