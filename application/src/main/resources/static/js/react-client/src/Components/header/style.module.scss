@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Lobster&family=Poppins:wght@300&display=swap');
+
+nav {
+    width: 100%;
+    background: var(--pink);
+    padding: 0.7rem 0;
+    position: fixed;
+    top: 0;
+    z-index: 10; 
+    padding-right: 2rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.Name {
+    font-family: "Lobster";
+    padding-left: 2rem;
+}
+
+.searchBar {
+    background: whitesmoke;
+    border-radius: 1rem;
+    padding: 0.6rem 1rem;
+}
+
+.searchBar input[type=search]{
+    background: transparent;
+    width: 10rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: dark;
+}
+.searchIcon {
+    position: absolute;
+}
+
+.profilePhoto {
+    width: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+}

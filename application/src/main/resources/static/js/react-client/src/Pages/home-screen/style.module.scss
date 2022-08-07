@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+
+:root {
+    --color-dark:#283747;
+    --color-light: #E5E7E9;
+    --color-lightbox: #ECF0F1;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: var(--color-dark);
+    background:var(--color-light);
+    overflow-x: hidden;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+main {
+    position: relative;
+    top: 5.4rem;
+}
+
+.mainScreen{
+    display: grid;
+    grid-template-columns: 20rem auto 30rem;
+    column-gap: 2rem;
+    position: relative;
+}
+
+.sidebar {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: var(--color-lightbox);
+    text-align: center;
+}
+
+.post {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: var(--color-lightbox);
+    text-align: center;
+}
+
+.news {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background: var(--color-lightbox);
+    text-align: center;
+    
+}

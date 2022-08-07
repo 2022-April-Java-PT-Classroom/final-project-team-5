@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import AboutScreen from '../../Pages/about-screen';
 import AccountCreateScreen from '../../Pages/account-create-screen';
 import AccountScreen from '../../Pages/account-screen';
+import AccountUpdateScreen from '../../Pages/account-update-screen';
 import EventScreen from "../../Pages/event-screen";
 import FAQScreen from '../../Pages/faq-screen';
 import HomeScreen from '../../Pages/home-screen';
@@ -16,7 +17,9 @@ const AppRouter=()=>{
             <Route exact path={"/news"} component ={NewsScreen}/>
             <Route exact path={"/event"} component={EventScreen}/>
             <Route exact path={"/account/create"} component={AccountCreateScreen}/>
-            <Route exact path={"/account/:user"} component={AccountScreen}/>
+
+            <Route exact path={"/account/:username"} component={AccountScreen}/>
+            <Route exact path={"/account/:username/update"} component={AccountUpdateScreen}/>
             <Route exact path={"/about-screen"} component={AboutScreen}/>
             <Route exact path={"/faq"} component={FAQScreen}/>
         </Switch>
