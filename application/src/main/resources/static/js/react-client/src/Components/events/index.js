@@ -19,12 +19,20 @@ const Add = ({ events }) => {
         const value = e.target.value;
         setAddEventState({
             ...addEventState,
-            [e.target.eventTitle]: value
+            [e.target.name]: value
         });
     };
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        // const newEvent = {
+        //     eventTitle:  addEventState.eventTitle, 
+        //     eventDescription: addEventState.eventDescription, 
+        //     eventLocation: addEventState.eventLocation, 
+        //     eventDate: addEventState.eventDate, 
+        //     eventOrganizer: addEventState.eventOrganizer, 
+        //     eventTime: addEventState.eventTime 
+        };
 
         const userData = {
             eventTitle: addEventState.eventTitle,
@@ -38,21 +46,28 @@ const Add = ({ events }) => {
         axios.post('http://localhost:8080/api/events/add-event', userData).then((response) => {
             console.log(response.status);
             console.log('DATA', response.data);
-            setAddEventsState(response.data);
+            setAddEventState(response.data);
         });
-    }
+    
 
     return (
         <div className={style.eventForm}>
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
-                    name="name"
+                    name="eventTitle"
                     value={addEventState.eventTitle}
                     onChange={handleChange}
-                    placeholder='Enter name of Event'
+                    placeholder='Event Title'
                 />
-                <button type="submit">Add Event</button>
+                <input
+                    type="text"
+                    name="eventDescription"
+                    value={addEventState.eventDescription}
+                    onChange={handleChange}
+                    placeholder='Event Title'
+                />
+                <button className={style.eventButton} type="submit">Add Event</button>
             </form>
     
         </div>

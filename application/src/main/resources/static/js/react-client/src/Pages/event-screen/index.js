@@ -34,7 +34,7 @@ const EventScreen=()=>{
     loadingEvents ? <h2>Loading...</h2> :
     <div>
       <section className={style.eventList}>
-      <Add events = {events} />
+      <Add events={events} />
       </section>
       {/* {events.map(events => (
         <div key={events.id}>

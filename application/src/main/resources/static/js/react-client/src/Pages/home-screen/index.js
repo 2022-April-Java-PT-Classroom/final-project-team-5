@@ -1,4 +1,4 @@
-import Event from '../../Components/event';
+import Event from '../../Components/events';
 import Login from '../../Components/login';
 import News from '../../Components/news-article';
 import Post from '../../Components/post';
