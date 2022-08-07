@@ -43,22 +43,22 @@ const AccountCreateScreen=()=>{
   }
 
     return(
-        <form className={style.createForm} onSubmit={handleSubmit}>
-          <input 
-            type = 'text'
-            name =  'username'
-            value = {userState.username} 
-            onChange = {handleChange}
-            placeholder = 'Enter new username'/>
-          <input 
-            type = 'password'
-            name = 'password' 
-            value = {userState.password} 
-            onChange = {handleChange}
-            placeholder = 'Enter new password'/>
-          <button className={style.submitButton} type='submit'>Create Account</button>   
-          <h3>{userState.message}</h3>
-        </form>
+      <form className={style.createForm} onSubmit={handleSubmit}>
+      <input 
+        type = 'text'
+        name =  'username'
+        value = {userState.username} 
+        onChange = {handleChange}
+        placeholder = 'Enter new username'/>
+      <input 
+        type = 'password'
+        name = 'password' 
+        value = {userState.password} 
+        onChange = {handleChange}
+        placeholder = 'Enter new password'/>
+      <button className={style.submitButton} type='submit'>Create Account</button>   
+      <h3>{userState.message}</h3>
+    </form>
     )
 }
 export default AccountCreateScreen
