@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import Add from '../../Components/events';
+import  AddEventElement  from '../../Components/events';
 import Axios from 'axios';
 import style from './style.module.scss';
 import { useParams } from 'react-router-dom';
@@ -29,18 +29,27 @@ const EventScreen=()=>{
   }, [events]);  
   
 
-  
   return(
-    loadingEvents ? <h2>Loading...</h2> :
+  
     <div>
       <section className={style.eventList}>
-      <Add events={events} />
+      <AddEventElement events={events} />
+
       </section>
-      {/* {events.map(events => (
-        <div key={events.id}>
-    <h2>{events.eventLocation}</h2> */}
+      {loadingEvents ? <h2>Loading...</h2> :
+      <div>
+      {events.map(event => (
+        <div key={event.id}>
+    <h2>{event.eventTitle}</h2>
+    <h4>{event.eventDate} | {event.eventOrganizer}</h4> 
+      
     </div>
- 
+    ))}
+    </div>
+      }
+    
+      
+    </div>
   );
 }
 export default EventScreen

@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 
 import axios from 'axios';
 import style from './style.module.scss';
 
-const Add = ({ events }) => {
+const AddEventElement = ({ events }) => {
     
-    const [addEventsState, setAddEventsState] = useState(events);
     const [addEventState, setAddEventState] = useState({
         eventTitle: "" , 
         eventDescription: "", 
@@ -25,15 +24,7 @@ const Add = ({ events }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // const newEvent = {
-        //     eventTitle:  addEventState.eventTitle, 
-        //     eventDescription: addEventState.eventDescription, 
-        //     eventLocation: addEventState.eventLocation, 
-        //     eventDate: addEventState.eventDate, 
-        //     eventOrganizer: addEventState.eventOrganizer, 
-        //     eventTime: addEventState.eventTime 
-        };
-
+       
         const userData = {
             eventTitle: addEventState.eventTitle,
             eventDescription: addEventState.eventDescription,
@@ -48,7 +39,7 @@ const Add = ({ events }) => {
             console.log('DATA', response.data);
             setAddEventState(response.data);
         });
-    
+    };
 
     return (
         <div className={style.eventForm}>
@@ -65,11 +56,18 @@ const Add = ({ events }) => {
                     name="eventDescription"
                     value={addEventState.eventDescription}
                     onChange={handleChange}
-                    placeholder='Event Title'
+                    placeholder='Event Description'
                 />
                 <button className={style.eventButton} type="submit">Add Event</button>
             </form>
-    
+            
+            <section className={style.eventUpdate}>
+              {/* <p>{events.eventTitle}</p> */}
+              </section>
         </div>
+    
+
+ 
     );
-}
+} 
+export default AddEventElement
