@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import Adam from '../../assets/Images/Adam.jpg';
-import Adrian from '../../assets/Images/Adrian.png';
-import Dhana from '../../assets/Images/Dhana.JPG';
-import Jamie from '../../assets/Images/Jamie.png';
-import Serena from '../../assets/Images/Serena.png';
-import Victor from '../../assets/Images/Victor.png';
+import Adam from '../../Assets/Images/Adam.jpg';
+import Adrian from '../../Assets/Images/Adrian.png';
+import Dhana from '../../Assets/Images/Dhana.JPG';
+import Jamie from '../../Assets/Images/Jamie.png';
+import Serena from '../../Assets/Images/Serena.png';
+import Victor from '../../Assets/Images/Victor.png';
 import axios from 'axios';
 import style from './about.module.scss';
 
@@ -51,9 +51,7 @@ const AboutScreen = () => {
                 <img className={style.img} src={Victor} alt='PP' />
                 </section>   
                 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                <p>Full stack java developer based in Cleveland, Ohio. Eager to use my excellent communication  and problem solving skills to help make a difference through tech.  </p>
                 
                 <section className={style.background}>
                 <h2>Adam Ackley</h2>
