@@ -5,34 +5,16 @@ nav {
     width: 100%;
     background: var(--pink);
     padding: 0.7rem 0;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10; 
+    padding-right: 2rem;
 }
 
-.navList{
+.container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.navListItem{
-    background: none;
-    font-family: "Lato", sans-serif;
-    color: var(--color-dark);
-    overflow-x: hidden;
-    margin: 0.5em;
-    padding: 1em 2em;
-    font-weight: 1000;
-}
-
-.navListItem:hover{
-    border: 1px solid #273746 ;
-    background-color: #fcceea;
-    border-radius: 1rem;
-    transition: .5s;
 }
 
 
@@ -41,7 +23,26 @@ nav {
     padding-left: 2rem;
 }
 
-.searchbar {
-    width: 100%;
-    color: #9DBFAF;
+.searchBar {
+    background: whitesmoke;
+    border-radius: 1rem;
+    padding: 0.6rem 1rem;
+}
+
+.searchBar input[type=search]{
+    background: transparent;
+    width: 10rem;
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    color: dark;
+}
+.searchIcon {
+    position: absolute;
+}
+
+.profilePhoto {
+    width: 3rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
 }

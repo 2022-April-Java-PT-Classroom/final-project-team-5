@@ -1,5 +1,5 @@
-import HomeScreen from '../../Pages/home-screen';
-import Login from '../login';
+import AccountScreen from '../../Pages/account-screen';
+import Cliff from '../../Assets/cliff.png';
 import style from './style.module.scss';
 
 const Header=()=>{
@@ -7,18 +7,14 @@ const Header=()=>{
         <div>
             <header className={style.header}>
                 <nav className={style.nav}>
-                    <h2 className={style.Name}>Agape</h2>
-                    <div className={style.navList}>
-                        <a href="/" className={style.navListItem}>Home</a>
-                        <a href="/event" className={style.navListItem}>Events</a> 
-                        <a href="/topics" className={style.navListItem}>Topics</a>
-                        <a href="/account/:user" className={style.navListItem}>Profile</a>
-                        <div>
-                            <form className={style.searchbar}>
-                                <input type={'search'} id={'query'} name={'q'} placeholder={'search...'}></input>
-                                <button type='submit'>search</button>
-                            </form>
+                    <div className={style.container}>
+                        <h2 className={style.Name}>Agape</h2>
+                        <div className={style.searchBar}>
+                         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+                            <i class="uil uil-search"></i>
+                            <input type = "search" placeholder="search" className="search" ></input>
                         </div>
+                        <a href="/account/:user"><img className={style.profilePhoto}  src={Cliff}></img><h4>@Mr.Thunder</h4></a>
                     </div>
                 </nav>
             </header>
