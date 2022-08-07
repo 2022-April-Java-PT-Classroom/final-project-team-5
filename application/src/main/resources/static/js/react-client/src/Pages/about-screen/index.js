@@ -1,15 +1,11 @@
 import React, { useState } from 'react';
 
-
-import axios from 'axios';
-import style from './about.module.scss';
-
-import Adam from '../../assets/Adam.jpg';
-import Adrian from '../../assets/Adrian.png';
-import Dhana from '../../assets/Dhana.JPG';
-import Jamie from '../../assets/Jamie.png';
-import Serena from '../../assets/Serena.png';
-import Victor from '../../assets/Victor.png';
+import Adam from '../../assets/Images/Adam.jpg';
+import Adrian from '../../assets/Images/Adrian.png';
+import Dhana from '../../assets/Images/Dhana.JPG';
+import Jamie from '../../assets/Images/Jamie.png';
+import Serena from '../../assets/Images/Serena.png';
+import Victor from '../../assets/Images/Victor.png';
 import axios from 'axios';
 import style from './about.module.scss';
 
