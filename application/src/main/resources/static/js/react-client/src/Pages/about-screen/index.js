@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 
 import Adam from '../../Assets/Images/Adam.jpg';
 import Adrian from '../../Assets/Images/Adrian.png';
+import Agape from '../../Assets/Images/Agape.png';
 import Dhana from '../../Assets/Images/Dhana.JPG';
 import Jamie from '../../Assets/Images/Jamie.png';
 import Serena from '../../Assets/Images/Serena.png';
