@@ -1,7 +1,9 @@
 package org.wecancodeit.serverside.model;
 
 import javax.persistence.*;
+import java.util.Calendar;
 import java.util.Collection;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -12,6 +14,8 @@ public class User {
     private String username;
     private String password;
     private int icon;
+    private String location;
+
     @ManyToMany
     private Set<User> usersFriended;
     @ManyToMany
@@ -38,12 +42,14 @@ public class User {
         this.username = username;
         this.password = password;
         this.icon = 0;
+        this.location = "unknown";
     }
 
 
     public Long getId() { return id; }
     public String getUsername() { return username; }
     public int getIcon() { return icon; }
+    public String getLocation() { return location; }
     public Collection<User> getUsersFriended() { return usersFriended; }
     public Collection<User> getUsersFollowing() { return usersFollowing; }
     public Collection<User> getUsersFollowedBy() { return usersFollowedBy; }
@@ -66,6 +72,7 @@ public class User {
     public void setUsername( String newName ) { this.username = newName; }
     public void setPassword( String newPassword ) { this.password = newPassword; }
     public void setIcon( int newIcon ) { this.icon = newIcon; }
+    public void setLocation( String newLocation ) { this.location = newLocation;}
 
     public boolean toggleUserFriended( User user ) { return toggleItem( user, usersFriended ); }
     public boolean toggleUserFollowing( User user ) { return toggleItem( user, usersFollowing); }
@@ -92,4 +99,16 @@ public class User {
         }
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof User)) return false;
+        User user = (User) o;
+        return username.equals(user.username);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(username);
+    }
 }

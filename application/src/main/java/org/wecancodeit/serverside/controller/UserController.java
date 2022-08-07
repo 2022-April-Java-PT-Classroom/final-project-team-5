@@ -33,6 +33,19 @@ public class UserController {
         else { return false; }
     }
 
+    @PutMapping("/api/users/update-account/{username}")
+    public boolean updateUserAccount(@PathVariable String username, @RequestBody String body) throws JSONException {
+        JSONObject accountInfo = new JSONObject(body);
+        String location = accountInfo.getString("location");
+        Optional<User> userToUpdateOpt = userRepo.findByUsername(username);
+        if(userToUpdateOpt.isEmpty()) { return false; }
+        User userToUpdate = userToUpdateOpt.get();
+        userToUpdate.setLocation(location);
+        userRepo.save(userToUpdateOpt.get());
+
+        return true;
+    }
+
     @PostMapping("/api/users/create-account")
     public boolean addUserAccount(@RequestBody String body) throws JSONException {
         JSONObject newUser = new JSONObject(body);

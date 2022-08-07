@@ -13,7 +13,7 @@ const AccountScreen=()=>{
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await Axios('http://localhost:8080/api/users/' + username);
+      const result = await Axios(`http://localhost:8080/api/users/${username}`);
       setUser(result.data);
     }
     if(user){
@@ -30,6 +30,8 @@ const AccountScreen=()=>{
       {loadingUser ? <h3>Finding Profile Info...</h3> : 
         <div className={style.userProfile}>
           <h3 className={style.username}>{user.username}</h3>
+          <h4 className={style.location}>Location: {user.location}</h4>
+          <a href='./update/'><button>Update Info</button></a>
         </div>
       }
     </div>
