@@ -15,21 +15,35 @@ public class UserController {
     @Resource
     private UserRepo userRepo;
 
-    @GetMapping("/api/users/{id}")
+    @GetMapping("/api/users/id/{id}")
     public User getUserAccount(@PathVariable Long id){ return userRepo.findById(id).get(); }
 
     @GetMapping("/api/users/{username}")
     public User getUserByName(@PathVariable String username){ return  userRepo.findByUsername(username).get(); }
 
-    @GetMapping("/api/users/login")
-    public Long userLogin(@RequestBody String body) throws JSONException{
+    @PostMapping("/api/users/login")
+    public boolean userLogin(@RequestBody String body) throws JSONException{
         JSONObject user = new JSONObject(body);
         String username = user.getString("username");
         Optional<User> userOpt = userRepo.findByUsername(username);
-        if (userOpt.isEmpty()){ return (long) -1; }
+        if (userOpt.isEmpty()){ return false; }
         String password = user.getString("password");
-        if (userOpt.get().isPasswordMatch(password)){ return userOpt.get().getId(); }
-        else { return (long) -1; }
+        User login = userOpt.get();
+        if (login.isPasswordMatch(password)){ return true; }
+        else { return false; }
+    }
+
+    @PutMapping("/api/users/update-account/{username}")
+    public boolean updateUserAccount(@PathVariable String username, @RequestBody String body) throws JSONException {
+        JSONObject accountInfo = new JSONObject(body);
+        String location = accountInfo.getString("location");
+        Optional<User> userToUpdateOpt = userRepo.findByUsername(username);
+        if(userToUpdateOpt.isEmpty()) { return false; }
+        User userToUpdate = userToUpdateOpt.get();
+        userToUpdate.setLocation(location);
+        userRepo.save(userToUpdateOpt.get());
+
+        return true;
     }
 
     @PostMapping("/api/users/create-account")
