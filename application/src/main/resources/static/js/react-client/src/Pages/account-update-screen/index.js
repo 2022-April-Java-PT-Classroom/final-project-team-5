@@ -69,8 +69,10 @@ const AccountUpdateScreen=()=>{
         <div>
           {loadingUser ? <h3>Finding Profile Info...</h3> : 
             <div className={style.userProfile}>
-             <h3 className={style.username}>{user.username}</h3>
-             <h4 className={style.location}>Current Location: {user.location}</h4>
+             <div>
+               <h3 className={style.username}>{user.username}</h3>
+               <h4 className={style.location}>Current Location: {user.location}</h4>
+             </div>
              <form className={style.createForm} onSubmit={handleSubmit}>
                 <input 
                   type = 'text'

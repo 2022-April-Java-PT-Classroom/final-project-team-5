@@ -41,7 +41,7 @@ const AboutScreen = () => {
                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                  ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p>
 
-//                 </div>
+                 </div>
 
 
                 <div className={style.section2}>
@@ -51,9 +51,7 @@ const AboutScreen = () => {
                 <img className={style.img} src={Victor} alt='PP' />
                 </section>   
                 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                <p>Full stack java developer based in Cleveland, Ohio. Eager to use my excellent communication  and problem solving skills to help make a difference through tech.  </p>
                 
                 <section className={style.background}>
                 <h2>Adam Ackley</h2>

@@ -25,13 +25,17 @@ const AccountScreen=()=>{
     return () => clearTimeout(timer);
   }, [user]);
 
+  const redirect=()=>{
+      window.location.href="/account/"+user.username+"/update/"
+      }
+
   return(
     <div className={style.body}>
       {loadingUser ? <h3>Finding Profile Info...</h3> : 
         <div className={style.userProfile}>
           <h3 className={style.username}>{user.username}</h3>
           <h4 className={style.location}>Location: {user.location}</h4>
-          <a href='./update/'><button>Update Info</button></a>
+          <a onClick={redirect}><button>Update Info</button></a>
         </div>
       }
     </div>
