@@ -1,5 +1,5 @@
 import style from './style.module.scss';
-import react from 'react';
+import react, {useState, useEffect} from 'react';
 import Axios from 'axios';
 
 
