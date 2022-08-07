@@ -41,7 +41,8 @@ const EventScreen=()=>{
       {events.map(event => (
         <div key={event.id}>
     <h2>{event.eventTitle}</h2>
-    <h4>{event.eventDate} | {event.eventOrganizer}</h4> 
+    <h4>{event.eventDate} | {event.eventLocation}</h4> 
+  
       
     </div>
     ))}
