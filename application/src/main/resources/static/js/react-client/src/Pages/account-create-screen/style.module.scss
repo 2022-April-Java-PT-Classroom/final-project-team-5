@@ -1,0 +1,30 @@
+.createForm{
+    margin-top: 20em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40em;
+}
+
+.createForm *{
+    margin: 5px;
+    font-size: x-large;
+    border-radius: 1rem;
+    padding: 6px;
+}
+
+.createForm input{
+    width: 15em;
+    padding-left: 12px;
+}
+
+.createForm button{
+    margin-top: 20px;
+    background-color: var(--pink);
+    width: 8em;
+}
+
+.createForm button:hover{
+    background-color: var(--darkPurple);
+    font-weight: bold;
+}
