@@ -1,0 +1,73 @@
+.aboutScreen{
+     background-color: rgb(59, 101, 70);
+    justify-content: center;
+    border-radius: 10px;
+    
+
+    
+    h2
+     {
+        background: linear-gradient(100deg, #f00, #ff2b00, rgb(235, 111, 48), #ff8000, #fa0, #ffd500, rgb(255, 0, 140), #d4ff00, rgb(206, 39, 89), #7f28cb, rgb(22, 49, 9), #490834, rgb(255, 0, 132), #00ff2b, #0f5, #00ff80, #0fa, #00ffd5, #0ff, #00d4ff, #0af, #007fff, #05f, #002bff, #00f, #2a00ff, #50f, #7f00ff, #a0f, #d400ff, rgb(88, 4, 88), #ff00d4, #f0a, #7d1c39, #f05, #ff002b, #f00) ;
+        color: #0000 ;
+        outline: auto black;
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: rgb(25, 32, 26);
+        display:grid;
+    }
+
+    p {
+        font-size: 20px;
+        color: rgb(30, 5, 5);
+        background-color: rgb(91, 234, 167);
+        height: 150px;
+        overflow-y: scroll;
+        scrollbar-color: #611a3b transparent;
+        scrollbar-width: thin;
+        background-image: linear-gradient(transparent, transparent);
+    }
+    img {
+        height:150px;
+        width: 150px;
+        margin: auto;
+        display: block;
+    }
+    .section{
+        max-width: 100%;
+        justify-content: center;
+        background-color: #262828;
+        height: auto;
+    }
+
+    .section img{
+        height: 500px;
+        width: 500px;
+    }
+    
+    .section1{
+        max-width:40%;
+        height:auto;
+        background-color: rgba(31, 97, 54, 0.825);
+        border-radius: 20px;
+        float: left;
+        padding: 60px;
+        justify-items: center;
+       
+        
+    }
+    
+    .section2{
+        max-width:40%;
+        height:auto;
+        background-color: rgba(20, 106, 38, 0.23);
+        border-radius: 20px;
+        float: right;
+        padding: 60px;
+        
+        justify-items: center;
+
+    }
+}
