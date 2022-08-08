@@ -20,12 +20,11 @@ const AppRouter=()=>{
             <Route exact path={"/news"} component ={NewsScreen}/>
             <Route exact path={"/event"} component={EventScreen}/>
             <Route exact path={"/account/create"} component={AccountCreateScreen}/>
-
             <Route exact path={"/account/:username"} component={AccountScreen}/>
             <Route exact path={"/account/:username/update"} component={AccountUpdateScreen}/>
             <Route exact path={"/about-screen"} component={AboutScreen}/>
             <Route exact path={"/faq-screen"} component={FAQScreen}/>
-            <Route exact path={"/email"}component={Email}/>
+            <Route exact path={"/email-us"}component={Email}/>
             {/* <Route exact path={"../question"} component={Question} /> */}
         </Switch>
     )

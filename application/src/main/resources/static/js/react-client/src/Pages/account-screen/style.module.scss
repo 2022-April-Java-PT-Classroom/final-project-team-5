@@ -1,0 +1,24 @@
+.body{
+    margin-top: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30em;
+}
+
+.body *{
+    margin: 5px;
+    border-radius: 1rem;
+    padding: 6px;
+}
+
+.body button{
+    margin-top: 20px;
+    background-color: var(--pink);
+    width: 8em;
+}
+
+.body button:hover{
+    background-color: var(--darkPurple);
+    font-weight: bold;
+}

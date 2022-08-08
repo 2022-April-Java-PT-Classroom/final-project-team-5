@@ -19,10 +19,15 @@ const AboutScreen = () => {
                 <h2>Dhana P Acharya</h2>
                 <img className={style.img} src={Dhana} alt='PP' /> 
                 </section>              
-                <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                     laboris nisi ut aliquip ex ea commodo consequat.
-                     Duis aute irure dolor in reprehenderit</p>
+                <p> Current Amazon Problem Solver , Process Guide, and Learning Ambassador  for problem solvers 
+                    and  Count Associates looking to further career in  IT field 
+                    by obtaining a role of a Junior Developer to make best use of the experiences and skills 
+                    that I gained through We CAN CODE IT, and Kenzie Academy.
+                    I am a passionate learner. Learning means fun to me. Learning anything new always enchants me.
+                    I love coding.
+                    Literally, I started coding from Zero,but my passion for coding dismantled 
+                    all the hinderances that 
+                    I came across.</p>
                 
                 <section className={style.background}>
                 <h2>Jamie Barr</h2>
@@ -52,9 +57,7 @@ const AboutScreen = () => {
                 <img className={style.img} src={Victor} alt='PP' />
                 </section>   
                 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit</p>
+                <p>Full stack java developer based in Cleveland, Ohio. Eager to use my excellent communication  and problem solving skills to help make a difference through tech.  </p>
                 
                 <section className={style.background}>
                 <h2>Adam Ackley</h2>
