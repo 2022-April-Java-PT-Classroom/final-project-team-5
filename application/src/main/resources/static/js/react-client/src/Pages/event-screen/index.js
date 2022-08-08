@@ -32,18 +32,21 @@ const EventScreen=()=>{
   return(
   
     <div>
-      <section className={style.eventList}>
+      <section className={style.eventForm}>
+        <h2> Create a Event</h2>
       <AddEventElement events={events} />
 
       </section>
+      <h2>All Events</h2>
       {loadingEvents ? <h2>Loading...</h2> :
-      <div>
+      <div className={style.events}>
       {events.map(event => (
         <div key={event.id}>
-    <h2>{event.eventTitle}</h2>
+    <h3>{event.eventTitle}</h3>
     <h4>{event.eventDate} | {event.eventLocation}</h4> 
+    <p className={style.eventpara}>{event.eventDescription} <br/>
+    {event.eventTime} | Organizer: {event.eventOrganizer}</p>
   
-      
     </div>
     ))}
     </div>

@@ -49,7 +49,35 @@ const AddEventElement = ({ events }) => {
                     name="eventTitle"
                     value={addEventState.eventTitle}
                     onChange={handleChange}
-                    placeholder='Event Title'
+                    placeholder="Name of Event"
+                />
+                <input
+                    type="text"
+                    name="eventLocation"
+                    value={addEventState.eventLocation}
+                    onChange={handleChange}
+                    placeholder="Location"
+                />
+                <input
+                    type="text"
+                    name="eventOrganizer"
+                    value={addEventState.eventOrganizer}
+                    onChange={handleChange}
+                    placeholder="Organizer's Name"
+                />
+                <input
+                    type="time"
+                    name="eventTime"
+                    value={addEventState.eventTime}
+                    onChange={handleChange}
+                    placeholder=""
+                />
+                 <input
+                    type="date"
+                    name="eventDate"
+                    value={addEventState.eventDate}
+                    onChange={handleChange}
+                    placeholder=""
                 />
                 <input
                     type="text"
