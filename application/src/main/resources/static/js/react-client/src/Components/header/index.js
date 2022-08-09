@@ -1,5 +1,5 @@
 import AccountScreen from '../../Pages/account-screen';
-import Cliff from '../../Assets/Images/cliff.png';
+import Cliff from '../../Assets/Images/cliff.png'
 import style from './style.module.scss';
 
 const Header=()=>{
@@ -8,7 +8,10 @@ const Header=()=>{
             <header className={style.header}>
                 <nav className={style.nav}>
                     <div className={style.container}>
-                        <h2 className={style.Name}>Agape</h2>
+                        <h2 className={style.Name}>Agape
+                        </h2>
+                        
+                        
                         <div className={style.searchBar}>
                          <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
                             <i class="uil uil-search"></i>

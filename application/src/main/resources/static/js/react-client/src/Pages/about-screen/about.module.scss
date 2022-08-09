@@ -74,3 +74,23 @@ p {
     5px 5px 15px 5px rgba(0,0,0,0);
 }
 
+ .section img{
+    height: 500px;
+    width: 500px;
+    justify-content:right;
+}
+ .section{
+        max-width: 100%;
+        justify-content: center;
+        background-color: #262828;
+        height: auto;
+        position: relative;
+    }
+
+    h3{
+        text-align:center;
+        justify-content: center;
+        color: aliceblue;
+        margin-top: auto;
+
+    }
