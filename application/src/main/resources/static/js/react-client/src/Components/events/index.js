@@ -23,7 +23,7 @@ const AddEventElement = ({ events }) => {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+        // e.preventDefault();
        
         const userData = {
             eventTitle: addEventState.eventTitle,
