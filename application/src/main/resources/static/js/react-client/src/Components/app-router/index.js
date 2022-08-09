@@ -6,8 +6,12 @@ import AccountScreen from '../../Pages/account-screen';
 import AccountUpdateScreen from '../../Pages/account-update-screen';
 import EventScreen from "../../Pages/event-screen";
 import FAQScreen from '../../Pages/faq-screen';
+import ForumScreen from '../../Pages/forum-screen';
 import HomeScreen from '../../Pages/home-screen';
+import LGBTQScreen from '../../Pages/lgbtq-screen';
 import NewsScreen from '../../Pages/news-screen';
+import RacialScreen from '../../Pages/racial-screen';
+import WomensScreen from '../../Pages/womens-screen';
 
 const AppRouter=()=>{
     
@@ -21,6 +25,10 @@ const AppRouter=()=>{
             <Route exact path={"/account/:username/update"} component={AccountUpdateScreen}/>
             <Route exact path={"/about-screen"} component={AboutScreen}/>
             <Route exact path={"/faq"} component={FAQScreen}/>
+            <Route exact path={"/women"} component={WomensScreen}/>
+            <Route exact path={"/lgbtq"} component={LGBTQScreen}/>
+            <Route exact path={"/racial"} component={RacialScreen}/>
+            <Route exact path={"/forum"} component={ForumScreen}/>
         </Switch>
     )
 }
