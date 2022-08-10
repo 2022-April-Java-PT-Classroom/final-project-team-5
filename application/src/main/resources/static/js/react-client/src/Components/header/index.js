@@ -1,5 +1,5 @@
 import AccountScreen from '../../Pages/account-screen';
-import Cliff from '../../Assets/Images/cliff.png';
+import Cliff from '../../Assets/Images/cliff.png'
 import style from './style.module.scss';
 
 const Header=()=>{
