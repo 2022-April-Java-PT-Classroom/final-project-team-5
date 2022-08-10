@@ -35,9 +35,7 @@ const AboutScreen = () => {
                 <h2 className={style.user}>Adrian Colter</h2>
                 <img className={style.img} src={Adrian} alt='PP' />
                 </section>
-                <p className={style.bio}>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit </p>
+                <p className={style.bio}> A jr. full stack developer located in the greater Cleveland area. I hold a Bachelor of Arts in Communication Studies and have prior experience in the marketing industry. I am eager to advance my skills and continue my learning in the software development field.</p>
                  </div>
                 <div className={style.section2}>
                 <section className={style.background}>
