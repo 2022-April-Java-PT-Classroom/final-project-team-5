@@ -13,7 +13,7 @@ const Email = () => {
                     </div>
                 </div>
                 <div class="btn">
-                    <button  type='send'>Send</button>
+                    <button className={style.emailButton}  type='send'>Send</button>
                 </div>
             </form>
         </div>
