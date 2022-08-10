@@ -12,9 +12,12 @@ const HomeScreen=()=>{
             <div className={style.sidebar}>
                  <a href="/" className={style.navListItem}><i class="uil uil-home"></i><h3>Home</h3></a>
                  <a href="/event" className={style.navListItem}><i class="uil uil-calender"></i><h3>Events</h3></a> 
-                 <a href="/about-screen" className={style.navListItem}><i class="uil uil-smile"></i><h3>Meet the team</h3></a>
-                 <a href="/faq" className={style.navListItem}><i class="uil uil-question-circle"></i><h3>FAQ</h3></a>
                  <a href="" className={style.navListItem}><i class="uil uil-megaphone"></i><h3>Learn how to protest</h3></a>
+                 <a href="/about-screen" className={style.navListItem}><i class="uil uil-smile"></i><h3>Meet the team</h3></a>
+                 <a href="/faq-screen" className={style.navListItem}><i class="uil uil-question-circle"></i><h3>FAQ</h3></a>
+                 <a href="/email-us" className={style.navListItem}><i class="uil uil-envelope"></i><h3>Email-Us</h3></a>
+                 <a href="/about-screen" className={style.navListItem}><i class="uil uil-smile"></i><h3>Meet the team</h3></a>
+
             </div>
             <div className={style.post}>
             <a href="/lgbtq" className={style.buttons}><h2>LGBTQ Rights</h2></a>
@@ -26,4 +29,4 @@ const HomeScreen=()=>{
         </main>
     )
 }
-export default HomeScreen
+export default HomeScreen;
