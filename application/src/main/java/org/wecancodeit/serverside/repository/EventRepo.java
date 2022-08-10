@@ -10,4 +10,6 @@ public interface EventRepo extends CrudRepository<Event, Long> {
 
     Optional<Event> findByEventLocation(String eventLocation);
 
+    Optional<Event> findByEventTitle(String eventTitle);
+
 }
