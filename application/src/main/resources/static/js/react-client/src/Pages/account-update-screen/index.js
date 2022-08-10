@@ -88,4 +88,4 @@ const AccountUpdateScreen=()=>{
         </div>
     )
 }
-export default AccountUpdateScreen
+export default AccountUpdateScreen;
