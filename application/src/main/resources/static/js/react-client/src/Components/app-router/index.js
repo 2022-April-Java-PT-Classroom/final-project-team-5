@@ -7,8 +7,12 @@ import AccountUpdateScreen from '../../Pages/account-update-screen';
 import Email from "../../Pages/email-us";
 import EventScreen from "../../Pages/event-screen";
 import FAQScreen from '../../Pages/faq-screen';
+import ForumScreen from '../../Pages/forum-screen';
 import HomeScreen from '../../Pages/home-screen';
+import LGBTQScreen from '../../Pages/lgbtq-screen';
 import NewsScreen from '../../Pages/news-screen';
+import RacialScreen from '../../Pages/racial-screen';
+import WomensScreen from '../../Pages/womens-screen';
 
 //import Question from '../../Pages/faq-screen/question';
 
@@ -23,6 +27,10 @@ const AppRouter=()=>{
             <Route exact path={"/account/:username"} component={AccountScreen}/>
             <Route exact path={"/account/:username/update"} component={AccountUpdateScreen}/>
             <Route exact path={"/about-screen"} component={AboutScreen}/>
+            <Route exact path={"/women"} component={WomensScreen}/>
+            <Route exact path={"/lgbtq"} component={LGBTQScreen}/>
+            <Route exact path={"/racial"} component={RacialScreen}/>
+            <Route exact path={"/forum"} component={ForumScreen}/>
             <Route exact path={"/faq-screen"} component={FAQScreen}/>
             <Route exact path={"/email-us"}component={Email}/>
             {/* <Route exact path={"../question"} component={Question} /> */}
