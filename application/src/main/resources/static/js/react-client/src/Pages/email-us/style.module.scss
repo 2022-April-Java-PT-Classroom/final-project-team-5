@@ -19,7 +19,7 @@
     justify-items: center;
 
 }
-button{
+.emailButton{
     margin-left: 50%;
     text-align: center;
     font-size: 15px;
@@ -30,6 +30,6 @@ button{
     border-radius: 5px;
 }
 
-button:hover{
-    background-color: rgb(65, 193, 229);
+.emailButton:hover{
+    background-color: rgb(170, 138, 33);
 }
