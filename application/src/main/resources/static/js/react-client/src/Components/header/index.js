@@ -1,10 +1,8 @@
 import AccountScreen from '../../Pages/account-screen';
-import Cliff from '../../Assets/Images/cliff.png'
 import style from './style.module.scss';
 
 const Header=()=>{
     return(
-        <div>
             <header className={style.header}>
                 <nav className={style.nav}>
                     <div className={style.container}>
@@ -17,7 +15,7 @@ const Header=()=>{
                     </div>
                 </nav>
             </header>
-        </div>
+        
     )
 }
 export default Header;
