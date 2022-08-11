@@ -1,66 +1,53 @@
+import react, {useEffect, useState} from 'react';
+
+import axios from 'axios';
 import style from './style.module.scss';
-import react, {useState, useEffect} from 'react';
-import Axios from 'axios';
 
-
-const Post=()=>{
-
-    const [post, setPost] = useState(null),
-          [loadingPost, setLoadingPost] = useState(true);
+const AddPost=({ posts })=>{
+  
   
     const[addPostState, setAddPostState] = useState({
-        postMessage: ""
+        bodyOfPost: ""
     });
-  
-    useEffect(() => {
-      const fetchPost = async () => {
-        const result = await Axios('http://localhost:8080/api/post');
-        console.log(result.data);
-        setPost(result.data);
-       
-      }
-      
-      if(post) {
-        setLoadingPost(false);
-      }
-  
-      const timer = setTimeout(() => {
-        !post && fetchPost();
-      }, 1000);
-      return () => clearTimeout(timer);
-    }, [post]);  
-    
-    const handleChange = (post) => {
-      const value = post.target.value;
+
+    const handleChange = (e) => {
+      const value = e.target.value;
       setAddPostState({
-        ...addPostState,
-        [post.target.postId] : value
+          ...addPostState,
+          [e.target.name]: value
       });
-    }
+  };
   
-    const handleSubmit = (post) => {
-      post.preventDefault();
-  
-      const userData = {
-        postId: addPostState.postId
-      }
+  const handleSubmit = (e) => {
+    
+    const userData = {
+      bodyOfPost: addPostState.bodyOfPost
+    };
+
+        axios.post('http://localhost:8080/api/post/add-post', userData).then((response) => {
+        console.log(response.data);
+        setAddPostState(response.data);
+      });
+    };   
       
       return(
-        loadingPost ? <h2>Loading...</h2>:
-        <div>
-            {post.map(post=>(
-                <div key ={post.id}>
-                    <h3>{post.bodyOfPost}</h3>
-                </div>    
-            ))}
-                
+     
+        <div className={style.postForm}>
+            <form onSubmit={handleSubmit}>
+               <textarea 
+                name="bodyOfPost"
+                value={addPostState.bodyOfPost}
+                onChange={handleChange}
+                placeholder="Write here"
+              />
+              <button className={style.postButton} type="submit">Create Post</button>
+              </form>
         </div>
 
       );
 
     }
-}
-    
 
+  
 
-export default Post
+export default AddPost
