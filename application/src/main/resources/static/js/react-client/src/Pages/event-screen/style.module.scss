@@ -1,11 +1,31 @@
+.container{
+    background-color: #ECF0F1;
+    padding-bottom: 20rem;
+    opacity: 93%;
+}
+
 .eventForm{
     padding-top: 10rem;
 }
 
 .events{
+    
     display: flex;
+    justify-content: center;
     margin-left: 2rem;
     
+    
+}
+
+.eventHeader{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.eventFormHeader{
+    display: flex;
+    justify-content: center;
 }
 
 

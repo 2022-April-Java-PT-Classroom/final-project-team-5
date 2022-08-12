@@ -31,13 +31,13 @@ const EventScreen=()=>{
 
   return(
   
-    <div>
-      <section className={style.eventForm}>
+    <div className={style.container}>
+      {/* <section className={style.eventForm}>
         <h2> Create a Event</h2>
       <AddEventElement events={events} />
 
-      </section>
-      <h2>All Events</h2>
+      </section> */}
+      <h2 className={style.eventHeader}>Upcoming Events</h2>
       {loadingEvents ? <h2>Loading...</h2> :
       <div className={style.events}>
       {events.map(event => (
@@ -49,9 +49,14 @@ const EventScreen=()=>{
   
     </div>
     ))}
+
     </div>
       }
-    
+        <section className={style.eventForm}>
+        <h2 className={style.eventFormHeader}> Create New Event</h2>
+      <AddEventElement events={events} />
+
+      </section>
       
     </div>
   );
