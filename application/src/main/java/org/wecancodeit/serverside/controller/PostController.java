@@ -28,15 +28,16 @@ public class PostController {
        return postOne.get();
    }
 
-   @GetMapping("api/post/add-post")
+   @PostMapping("api/post/add-post")
     public Collection<Post> addPost(@RequestBody String body) throws JSONException{
        JSONObject newPost = new JSONObject(body);
        String bodyOfPost = newPost.getString("body of post");
-       String post = newPost.getString("post");
 
        Optional<Post> addPost = postRepo.findByBodyOfPost(bodyOfPost);
+
        if(addPost.isEmpty()){
            Post postToAdd = new Post(bodyOfPost);
+           postRepo.save(postToAdd);
        }
        return (Collection<Post>) postRepo.findAll();
    }

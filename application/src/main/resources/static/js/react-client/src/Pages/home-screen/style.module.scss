@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+import 
+
+
+:root {
+    --color-dark:#283747;
+    --color-light: #E5E7E9;
+    --color-lightbox: #b7e9f5;
+}
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    color: var(--color-dark);
+    background:var(--color-light);
+    overflow-x: hidden;
+    background-image: url("../../Assets/Images/clay-banks-OvGIFsexb-8-unsplash.jpg");
+    background-size: 1920px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+main {
+    position: relative;
+    top: 5.4rem;
+}
+
+.mainScreen{
+    display: grid;
+    grid-template-columns: 20rem auto 30rem;
+    column-gap: 2rem;
+    position: relative;
+    
+}
+
+.sidebar {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #ECF0F1;
+    text-align: center;
+
+    max-height: 290px;
+    opacity: 93%;
+}
+
+.post {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #ECF0F1;
+    text-align: center;
+    height: 900px;
+    max-height: 1000px;
+    opacity: 90%;
+}
+
+.news {
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #ECF0F1;
+    text-align: center;
+    overflow-y: scroll;
+    max-height: 700px;
+    overflow-x: hidden;
+    opacity: 93%;
+}
+
+.news img {
+    max-width: 26rem;
+    opacity: 100%;
+}
+
+.navListItem {
+    color: #283747;
+}
