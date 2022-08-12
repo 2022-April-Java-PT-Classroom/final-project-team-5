@@ -37,6 +37,7 @@ public class PostController {
        Optional<Post> addPost = postRepo.findByBodyOfPost(newBodyOfPost);
        if(addPost.isEmpty()){
            Post postToAdd = new Post(newBodyOfPost);
+
            postRepo.save(postToAdd);
        }
        return (Collection<Post>) postRepo.findAll();
