@@ -35,7 +35,7 @@ const LGBTQScreen=()=>{
     
     
     return(
-        loading ? <h3> loading...</h3> :
+        loading ? <h3 className={style.loading}> loading...</h3> :
         
         <div>
             {/* <h1>News</h1> */}

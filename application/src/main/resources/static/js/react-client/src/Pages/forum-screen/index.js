@@ -6,7 +6,7 @@ const ForumScreen=()=>{
     return(
         <h2 className={style.forum}>HELLOthdfthdthdhtrfg</h2>
         
-    )
+    );
 }
 
-export default ForumScreen
+export default ForumScreen;
