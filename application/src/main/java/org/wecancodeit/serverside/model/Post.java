@@ -34,8 +34,8 @@ public class Post {
         return topic;
     }
 
-    public Post(String post) {
-        this.bodyOfPost = post;
+    public Post(String bodyOfPost) {
+        this.bodyOfPost = bodyOfPost;
     }
 
     public User getUserPost() {
