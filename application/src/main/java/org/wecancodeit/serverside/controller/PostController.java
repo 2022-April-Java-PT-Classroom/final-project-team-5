@@ -3,7 +3,10 @@ package org.wecancodeit.serverside.controller;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.springframework.web.bind.annotation.*;
+import org.wecancodeit.serverside.model.Comment;
 import org.wecancodeit.serverside.model.Post;
+import org.wecancodeit.serverside.model.User;
+import org.wecancodeit.serverside.repository.CommentRepo;
 import org.wecancodeit.serverside.repository.PostRepo;
 
 import javax.annotation.Resource;
@@ -15,6 +18,8 @@ import java.util.Optional;
 public class PostController {
    @Resource
     private PostRepo postRepo;
+   @Resource
+   private CommentRepo commentsRepo;
 
 
    @GetMapping("api/post")
@@ -43,7 +48,30 @@ public class PostController {
        return (Collection<Post>) postRepo.findAll();
    }
 
-   @DeleteMapping("api/post/{id}/delete-post")
+    @PostMapping("/api/post/{id}/add-comment")
+    public Optional<Post> addCommentToPost(@RequestBody String body, @PathVariable Long id) throws JSONException {
+        JSONObject newComment = new JSONObject(body);
+        String commentContent = newComment.getString("commentContent");
+        Optional<Comment> commentToAddOpt = commentsRepo.findByCommentContent(commentContent);
+
+        if (commentToAddOpt.isPresent()) {
+            Optional<Post> postToAddCommentToOpt = postRepo.findById(id);
+            Post postToAddCommentTo = postToAddCommentToOpt.get();
+            postToAddCommentTo.addComment(commentToAddOpt.get());
+            postRepo.save(postToAddCommentTo);
+        } else {
+            Comment newCommentToSave =new Comment(commentContent);
+            commentsRepo.save(newCommentToSave);
+            Optional<Post> postToAddCommentToOpt = postRepo.findById(id);
+            Post postToAddCommentTo = postToAddCommentToOpt.get();
+            postToAddCommentTo.addComment(newCommentToSave);
+            postRepo.save(postToAddCommentTo);
+        }
+        return postRepo.findById(id);
+    }
+
+
+    @DeleteMapping("api/post/{id}/delete-post")
     public Collection<Post> deletePost(@PathVariable Long id) throws JSONException{
        Optional<Post>postToRemove=postRepo.findById(id);
 
