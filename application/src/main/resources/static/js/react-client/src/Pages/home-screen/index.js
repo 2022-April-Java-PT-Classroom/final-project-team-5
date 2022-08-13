@@ -16,6 +16,7 @@ const HomeScreen=()=>{
                  <a href="/faq-screen" className={style.navListItem}><i class="uil uil-question-circle"></i><h3>FAQ</h3></a>
                  <a href="/email-us" className={style.navListItem}><i class="uil uil-envelope"></i><h3>Email-Us</h3></a>
                  <a href="/about-screen" className={style.navListItem}><i class="uil uil-smile"></i><h3>Meet the team</h3></a>
+                 <a href="/comment" className={style.navListItem}><i class="uil uil-text-box"></i><h3>Comments</h3></a>
 
             </div>
             <div className={style.post}>

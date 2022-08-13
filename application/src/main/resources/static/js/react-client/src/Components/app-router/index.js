@@ -4,6 +4,7 @@ import AboutScreen from '../../Pages/about-screen';
 import AccountCreateScreen from '../../Pages/account-create-screen';
 import AccountScreen from '../../Pages/account-screen';
 import AccountUpdateScreen from '../../Pages/account-update-screen';
+import Comment from '../../Pages/comment';
 import Email from "../../Pages/email-us";
 import EventScreen from "../../Pages/event-screen";
 import FAQScreen from '../../Pages/faq-screen';
@@ -35,6 +36,7 @@ const AppRouter=()=>{
             <Route exact path={"/faq-screen"} component={FAQScreen}/>
             <Route exact path={"/email-us"}component={Email}/>
             <Route exact path={"/protest"}component={ProtestScreen}/>
+            <Route exact path={"/comment"} component={Comment} />
             {/* <Route exact path={"../question"} component={Question} /> */}
         </Switch>
     )
