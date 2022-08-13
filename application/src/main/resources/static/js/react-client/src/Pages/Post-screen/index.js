@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 
-import AddPost  from '../../Components/post';
 import  Axios  from 'axios';
 import axios from 'axios';
 import style from './style.module.scss';
@@ -9,7 +8,7 @@ import { useParams } from 'react-router-dom';
 const PostScreen=()=>{
 
     const { id } = useParams();
-    const [posts, setPost] = useState(null),
+    const [post, setPost] = useState(null),
           [loadingPost, setLoadingPost] = useState(true);
     const [commentState, setCommentState] = useState({
           commentContent: ""
@@ -18,20 +17,20 @@ const PostScreen=()=>{
 
   useEffect(() => {
     const fetchPost = async () => {
-      const result = await Axios(`http://localhost:8080/api/post`);
+      const result = await Axios(`http://localhost:8080/api/post/${id}`);
       console.log(result.data);
       setPost(result.data);
     }
     
-    if(posts) {
+    if(post) {
       setLoadingPost(false);
     }
 
     const timer = setTimeout(() => {
-      !posts && fetchPost();
+      !post && fetchPost();
     }, 1000);
     return () => clearTimeout(timer);
-  }, [posts]);  
+  }, [post]);  
   
 
   const handleChange = (event) => {
@@ -59,26 +58,22 @@ then((response) => {
   
 return (
 
-  loadingPost ? <h2>Loading</h2> :
+  loadingPost ? <h2 className={style.singlePostLoad}>Loading</h2> :
 
-    <div>
-        <section className={style.postForum}>
-        <h2>Create A Post</h2>
-        <AddPost posts={posts} />
-        </section>
+    <div className={style.postInfo}>
+      
         <h2>Questions</h2>
         <h3>A Safe Place to Educate Yourself On Important Differences & Bring Us Closer Together</h3>
         {loadingPost ? <h3>Loading...</h3> :
                  <div className={style.post}>
-              {posts.map(post => (
-                <div key={post.id}>
+    
                     <p className={style.postBox}>{post.bodyOfPost}</p>
                     
                 </div>
-              ))}  
-            </div>
+  
+ 
 }
-{posts.comments && posts.comments.map(comment=> (
+{post.comments && post.comments.map(comment=> (
   <div key={comment.id}>
                       <p>{comment.commentContent}</p>
                       </div>
