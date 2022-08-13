@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato');
-import 
+@import url('https://fonts.googleapis.com/css2?family=Bebas-Neue');
 
 
 :root {
@@ -7,6 +7,7 @@ import
     --color-light: #E5E7E9;
     --color-lightbox: #b7e9f5;
 }
+
 
 *, *::before, *::after{
     margin: 0;
@@ -38,24 +39,6 @@ main {
     top: 5.4rem;
 }
 
-.mainScreen{
-    display: grid;
-    grid-template-columns: 20rem auto 30rem;
-    column-gap: 2rem;
-    position: relative;
-    
-}
-
-.sidebar {
-    border-radius: 1rem;
-    padding: 1rem;
-    margin-top: 1rem;
-    background-color: #ECF0F1;
-    text-align: center;
-
-    max-height: 290px;
-    opacity: 93%;
-}
 
 .post {
     border-radius: 1rem;
@@ -85,6 +68,40 @@ main {
     opacity: 100%;
 }
 
-.navListItem {
-    color: #283747;
-}
+.buttons {
+      
+      display: flex;
+      justify-content: center;
+      font-weight: 200;
+      letter-spacing: 1px;
+      padding: 25px 50px 25px;
+      outline: 0;
+      border: 1px solid black;
+      cursor: pointer;
+      position: relative;
+      background-color: rgba(0, 0, 0, 0);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+       margin: 2rem;
+       color: black;
+    }
+    .buttons:after {
+      content: "";
+      background-color: #FFE54C;
+      width: 100%;
+      z-index: -1;
+      position: absolute;
+      height: 100%;
+      top: 7px;
+      left: 7px;
+      transition: 0.2s;
+    }
+    .buttons:hover:after {
+      top: 0px;
+      left: 0px;
+    }
+    
+    .title{
+        font-family: "Bebas Neue";
+    }
