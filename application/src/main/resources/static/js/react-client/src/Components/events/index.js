@@ -79,10 +79,9 @@ const AddEventElement = ({ events }) => {
                     onChange={handleChange}
                     placeholder=""
                 />
-                <input
-                    type="text"
-                    name="eventDescription"
+                  <textarea
                     value={addEventState.eventDescription}
+                    name="eventDescription"
                     onChange={handleChange}
                     placeholder='Event Description'
                 />
