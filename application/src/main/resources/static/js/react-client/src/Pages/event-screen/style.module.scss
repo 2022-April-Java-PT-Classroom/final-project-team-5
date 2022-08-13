@@ -1,6 +1,6 @@
 .container{
     background-color: #ECF0F1;
-    padding-bottom: 20rem;
+    padding-bottom: 10rem;
     opacity: 93%;
 }
 
@@ -8,13 +8,49 @@
     padding-top: 10rem;
 }
 
+.eventTitle{
+    color: black;
+}
+
 .events{
-    
+ 
     display: flex;
     justify-content: center;
     margin-left: 2rem;
-    
-    
+    padding: 2em 2em 2em 2em;
+    margin: 2em 2em 2em 2em;
+    font-size: 16px;
+    line-height: 1.618em;
+    background: gray;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+    color: black;   
+    flex-wrap: wrap;
+   
+}
+
+.eventInfo{
+    color: black;
+    padding: 2em 2em 2em 2em;
+    margin: 2em 2em 2em 2em;
+    font-size: 16px;
+    line-height: 1.618em;
+    background: #FFE54C;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+
+.eventLoading{
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
 }
 
 .eventHeader{
