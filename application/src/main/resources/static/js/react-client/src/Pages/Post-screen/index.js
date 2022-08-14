@@ -57,13 +57,12 @@ then((response) => {
 
   
 return (
-
+  
   loadingPost ? <h2 className={style.singlePostLoad}>Loading</h2> :
-
-    <div className={style.postInfo}>
+  
+  <div className={style.postInfo}>
+  
       
-        <h2>Questions</h2>
-        <h3>A Safe Place to Educate Yourself On Important Differences & Bring Us Closer Together</h3>
         {loadingPost ? <h3>Loading...</h3> :
                  <div className={style.post}>
     
@@ -75,7 +74,7 @@ return (
 }
 {post.comments && post.comments.map(comment=> (
   <div key={comment.id}>
-                      <p>{comment.commentContent}</p>
+                      <p className={style.comment}>{comment.commentContent}</p>
                       </div>
                   ))}
                  
@@ -84,7 +83,7 @@ return (
                 name="commentContent"
                 value={commentState.commentContent}
                 onChange={handleChange}
-                placeholder='Write'
+                placeholder='Add Comment'
             />
             <button type='submit'>Add Comment</button>
             </form>
