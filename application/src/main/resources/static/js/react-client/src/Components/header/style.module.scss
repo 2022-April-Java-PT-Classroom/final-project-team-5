@@ -65,7 +65,7 @@ nav {
 
 .links{
     display: flex;
-    padding-left: 42rem;
+    flex-wrap: wrap;
 }
 
 
@@ -76,9 +76,4 @@ nav {
     padding-top: .5rem;
     padding-bottom: .5rem;
     font-size: 60px;
-}
-
-img{
-    height: 50px;
-    width: 50px;
 }
