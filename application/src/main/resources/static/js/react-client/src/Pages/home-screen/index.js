@@ -5,6 +5,7 @@ import React from 'react';
 const HomeScreen=()=>{
     return(
         <main>
+            <h2>hi</h2>
           {/* <div className={style.slides}>
             <div className={style.slide}>
             <img className={style.slide-image} alt='' src ={slide}></img>
