@@ -16,8 +16,6 @@ nav {
     // top: 0;
     // z-index: 10; 
     // padding-right: 2rem;
-    
-    
 }
 
 .each{
@@ -42,25 +40,23 @@ nav {
        
 }
 
-.each:before{
+.each:after{
     content: '';
     background: #FFE54C;
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
+    display: flex;
+    //position: absolute;
+    margin-top: -6px;
     width: 0;
-    height: 8px;
+    height: 3px;
     transition: all 0.5s ease-in-out;
 }
 
 .each:hover{
     background-position: 0;
-
 }
 
-.each:hover::before{
-    width: 100%;
+.each:hover::after{
+   width: 100%;
 }
 
 .links{
@@ -76,4 +72,20 @@ nav {
     padding-top: .5rem;
     padding-bottom: .5rem;
     font-size: 60px;
+    background-image: radial-gradient(
+        circle,
+        #FFE54C 0%,
+        #FFE54C 10%,
+        aliceblue 35%,
+        aliceblue 100%
+    );
+    background-position: 140%;
+    background-size: 280%;
+    transition: all 0.75s ease-in-out;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.Name:hover{
+    background-position: 45%;
 }
