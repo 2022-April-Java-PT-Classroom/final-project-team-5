@@ -38,15 +38,14 @@ const EventScreen=()=>{
 
       </section> */}
       <h2 className={style.eventHeader}>Upcoming Events</h2>
-      {loadingEvents ? <h2>Loading...</h2> :
+      {loadingEvents ? <h2 className={style.eventLoading}>Loading...</h2> :
       <div className={style.events}>
       {events.map(event => (
-        <div key={event.id}>
-    <h3>{event.eventTitle}</h3>
+        <div className={style.eventInfo} key={event.id}>
+    <h3 className={style.eventTitle}>{event.eventTitle}</h3>
     <h4>{event.eventDate} | {event.eventLocation}</h4> 
     <p className={style.eventpara}>{event.eventDescription} <br/>
     {event.eventTime} | Organizer: {event.eventOrganizer}</p>
-  
     </div>
     ))}
 
