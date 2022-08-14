@@ -1,18 +1,21 @@
-import AccountScreen from '../../Pages/account-screen';
+
 import style from './style.module.scss';
+import React from 'react';
 
 const Header=()=>{
     return(
             <header className={style.header}>
                 <nav className={style.nav}>
-                    <div className={style.container}>
-                       <a href="/"><h2 className={style.Name}>Agape</h2></a> 
-                        <div className={style.searchBar}>
-                         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
-                            <i class="uil uil-search"></i>
-                            <input type = "search" placeholder="search" className="search" ></input>
-                        </div>
-                    </div>
+                       <div className={style.navBar}>
+                       <a href="/"><h2 className={style.Name}>Agape</h2></a>
+                       <div className={style.links}>
+                        <a href="/events"><h2 className={style.each}>Events</h2></a>
+                        <a href="/protest"><h2 className={style.each}>Learn how to Protest</h2></a>
+                        <a href="/faq-screen"><h2 className={style.each}>FAQ</h2></a>
+                        <a href="/email-us"><h2 className={style.each}>Email-Us</h2></a>
+                        <a href="/about-screen"><h2 className={style.each}>About Us</h2></a>
+                       </div>
+                       </div>
                 </nav>
             </header>
         
