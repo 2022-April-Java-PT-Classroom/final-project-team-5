@@ -24,12 +24,14 @@ body {
     background-color: aliceblue;
     font-size:xx-large;
     font-family: 'Bebas Neue';
+    
 
 }
 
 .mission2{
     font-size: large;
     font-family: 'Bebas Neue';
+    text-align: left;
     
     
     
@@ -119,7 +121,7 @@ main {
       }
       
       .contentCarrousel figure {
-        width: 100%;
+        // width: 100%;
         height: 120px;
         border: 1px solid #3b444b;
         overflow: hidden;
