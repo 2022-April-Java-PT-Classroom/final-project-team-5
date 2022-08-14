@@ -1,16 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas-Neue');
 .container{
 
-    padding-top: 5rem;
-    font-size: 100;
+    padding-top: 1.5rem;
+    font-family:'Bebas Neue';
+
+    // font-size: 100;
+    // justify-content: center;
 
 }
-
-.infoBody{
-    padding: 50px;
-    background-color: gray;
-    opacity: 93%;
+.title{
+  font-size: xx-large;
 }
-
 
 .resources {
 display: flex;
@@ -28,6 +28,7 @@ display: flex;
   -webkit-user-select: none;
   touch-action: manipulation;
    margin: 2rem;
+  
 }
 .resources:after {
   content: "";

@@ -1,13 +1,13 @@
 
-import protest from"../../Assets/Images/clay-banks-OvGIFsexb-8-unsplash.jpg"
-import GhandiPhoto from "../../Assets/Images/GhandiQoute.png"
-import mlk from "../../Assets/Images/mlkqoute.png"
+import protest from"../../Assets/Images/clay-banks-OvGIFsexb-8-unsplash.jpg";
+import GhandiPhoto from "../../Assets/Images/GhandiQoute.png";
+import mlk from "../../Assets/Images/mlkqoute.png";
 import myBody3 from "../../Assets/Images/myBody3.jpg";
 import lgbtq from '../../Assets/Images/lgbtq.jpg';
 import endRacism from "../../Assets/Images/endRacism.jpg";
 import rosaParks from "../../Assets/Images/rosaParks.png";
 import humanity from "../../Assets/Images/humanity.jpg";
-import lgbtq2 from "../../Assets/Images/lgbtq2.jpg"
+import lgbtq2 from "../../Assets/Images/lgbtq2.jpg";
 
 import React from 'react';
 import style from './style.module.scss';
