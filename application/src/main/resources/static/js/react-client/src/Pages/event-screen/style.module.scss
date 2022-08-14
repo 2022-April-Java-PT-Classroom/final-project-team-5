@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas-Neue');
 .container{
     background-color: #ECF0F1;
     padding-bottom: 10rem;
@@ -9,6 +10,8 @@
 }
 
 .eventTitle{
+    font-family: "Bebas Neue";
+    font-size: 25px;
     color: black;
 }
 
@@ -55,11 +58,15 @@
 
 .eventHeader{
     display: flex;
+    font-family: 'Bebas Neue';
+    font-size: 75px;
     justify-content: center;
     padding-top: 100px;
 }
 
 .eventFormHeader{
+    font-family: 'Bebas Neue';
+    font-size: 45px;
     display: flex;
     justify-content: center;
 }
