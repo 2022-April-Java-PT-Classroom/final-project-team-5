@@ -13,7 +13,7 @@ const Header=()=>{
                         <a href="/protest"><h2 className={style.each}>Learn how to Protest</h2></a>
                         <a href="/forum"><h2 className={style.each}>Forum</h2></a>
                         <a href="/faq-screen"><h2 className={style.each}>FAQ</h2></a>
-                        <a href="/email-us"><h2 className={style.each}>Email-Us</h2></a>
+                        <a href="/contact-us"><h2 className={style.each}>Contact-Us</h2></a>
                         <a href="/about-screen"><h2 className={style.each}>About Us</h2></a>
                        </div>
                        </div>
