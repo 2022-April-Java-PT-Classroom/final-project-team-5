@@ -109,7 +109,7 @@ main {
     .slides{
         position:relative;
         background-color: #283747;
-        height: 100vh;
+        height: 20rem;
         overflow:hidden;
     }
 
@@ -130,7 +130,8 @@ main {
 
     .slide-image{
         width: 100%;
-        object-fit: cover;
+       height: 2 rem;
+       width: 2rem;
     }
 
     @keyframes cycle{
