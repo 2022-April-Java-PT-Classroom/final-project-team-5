@@ -31,6 +31,8 @@ const PostsScreen = () => {
 
     return(
         <div className={style.allPostsContainer}>
+            <h2>Questions</h2>
+            <h3>A Safe Place to Educate Yourself On Important Differences & Bring Us Closer Together</h3>
             <h2 className={style.postHeader}>Speak Out</h2> 
             {loading ? <h3>One Moment...</h3> : allPosts.map(post => (
                 <a key={post.id} href={`post/${post.id}`}><p className={style.allPosts}>{post.bodyOfPost}</p></a>
