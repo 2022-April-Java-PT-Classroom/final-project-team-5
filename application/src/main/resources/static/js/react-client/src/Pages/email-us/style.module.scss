@@ -1,11 +1,12 @@
 .emailus{
-    background-color: rgb(229, 240, 232);
+    background-color: gray;
     position:relative;
     justify-content: center;
     justify-items: center;
     width: 50%;
     margin-left: 15%;
-    
+    border-radius: 2rem;
+    opacity: 90%;
     
 }
 .email{
@@ -20,16 +21,14 @@
 
 }
 .emailButton{
+    background-color: rgba(0, 0, 0, 0);
+    font-family: 'Bebas Neue';
     margin-left: 50%;
     text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px; 
     width: 70px;
-    background-color: rgb(144, 166, 158);
-    border-radius: 5px;
-}
-
-.emailButton:hover{
-    background-color: rgb(170, 138, 33);
+    outline: 0;
+    padding: 5px;
 }
