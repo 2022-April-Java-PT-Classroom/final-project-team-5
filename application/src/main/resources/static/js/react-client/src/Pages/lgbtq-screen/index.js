@@ -40,23 +40,30 @@ const LGBTQScreen=()=>{
         <div>
             {/* <h1>News</h1> */}
         <section className={style.newsContainer}>
+            <div className={style.newsOne}>
                 <a href ={news.url} target='_blank'><h2 className={style.newsTitle}>{news.title}</h2></a>
                 <a href ={news.url} target='_blank'><img className={style.newsImg} src={news.urlToImage}/></a>
                 <h3 className={style.newsDescription}>{news.description}</h3>
                 <h4 className={style.newsTagline}>Author: {news.author} | {news.publishedAt}</h4> 
+                </div>
+                <div className={style.newsTwo}>
                 <a href ={newsOne.url} target='_blank'><h2 className={style.newsTitle}>{newsOne.title}</h2></a>
                 <a href ={newsOne.url} target='_blank'><img className={style.newsImg} src={newsOne.urlToImage}/></a>
                 <h3 className={style.newsDescription}>{newsOne.description}</h3>
                 <h4 className={style.newsTagline}>Author: {newsOne.author} | {newsOne.publishedAt}</h4> 
+                </div>
+                <div className={style.newsThree}>
                 <a href ={newsTwo.url} target='_blank'><h2 className={style.newsTitle}>{newsTwo.title}</h2></a>
                 <a href ={newsTwo.url} target='_blank'><img className={style.newsImg} src={newsTwo.urlToImage}/></a>
                 <h3 className={style.newsDescription}>{newsTwo.description}</h3>
                 <h4 className={style.newsTagline}>Author: {newsTwo.author} | {newsTwo.publishedAt}</h4>
+                </div>
+                <div className={style.newsFour}>
                 <a href ={newsThree.url} target='_blank'><h2 className={style.newsTitle}>{newsThree.title}</h2></a>
                 <a href ={newsThree.url} target='_blank'><img className={style.newsImg} src={newsThree.urlToImage}/></a>
                 <h3 className={style.newsDescription}>{newsThree.description}</h3>
                 <h4 className={style.newsTagline}>Author: {newsThree.author} | {newsThree.publishedAt}</h4>
-                
+                </div>
             </section>
         </div>
         
