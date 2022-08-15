@@ -2,7 +2,7 @@ const data = [
     {
       id: 1,
       title: "What is Agape's  mission?",
-      info: "Agape is committed to making a positive impact on social  lives of people from all spectrums. It is a platform where every individual is equally  welcomed despite  gender orientation, race, and color.",
+      info: "Agape exists to band people together to fight against the injustices we are witnessing everyday in a safe and educated manner.",
     },
 
     {

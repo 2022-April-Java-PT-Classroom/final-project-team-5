@@ -15,7 +15,6 @@ import style from './style.module.scss';
 const HomeScreen=()=>{
     return(
         <main>
-
 <section className={style.slideshow}>
       <div className={style.entireContent}>
         <div className={style.contentCarrousel}>
