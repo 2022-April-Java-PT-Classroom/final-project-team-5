@@ -72,20 +72,10 @@ nav {
     padding-top: .5rem;
     padding-bottom: .5rem;
     font-size: 60px;
-    background-image: radial-gradient(
-        circle,
-        #FFE54C 0%,
-        #FFE54C 10%,
-        aliceblue 35%,
-        aliceblue 100%
-    );
-    background-position: 140%;
-    background-size: 280%;
-    transition: all 0.75s ease-in-out;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    transition: all 0.5s;
 }
 
 .Name:hover{
-    background-position: 45%;
+    color: #fef6c7;
+    text-shadow: 1px 0 1px #FFE54C, 0 1px 1px #FFE54C, -1px 0 1px #FFE54C, 0 -1px 1px #FFE54C, 0 0 5px #FFE54C;
 }
