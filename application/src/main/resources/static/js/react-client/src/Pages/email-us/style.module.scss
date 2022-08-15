@@ -1,34 +1,107 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
 .emailus{
+    padding-top: 25px;
     background-color: gray;
-    position:relative;
     justify-content: center;
-    justify-items: center;
-    width: 50%;
-    margin-left: 15%;
+    width: 40%;
+    min-width: 450px;
     border-radius: 2rem;
     opacity: 90%;
-    
+    margin: 5px;
 }
+
 .email{
     text-align: center;
-    margin-top: 95px;
-    margin-left: 25%;
-    font-size: 50px;
     font-weight: bold;
-    margin-left: 10px;
     justify-content: center;
     justify-items: center;
-
 }
+
+.email h2{
+    margin-bottom: 3px;
+}
+
+.email input{
+    margin-bottom: 3px;
+}
+
 .emailButton{
-    background-color: rgba(0, 0, 0, 0);
     font-family: 'Bebas Neue';
     margin-left: 50%;
-    text-align: center;
     font-size: 16px;
-    font-weight: 200;
-    letter-spacing: 1px; 
-    width: 70px;
     outline: 0;
-    padding: 5px;
+    padding: 5px 20px;
+}
+
+.callus{
+    padding-top: 45px;
+    padding-bottom: 35px;
+    background-color: gray;
+    justify-content: center;
+    width: 20%;
+    border-radius: 2em;
+    opacity: 90%;
+    min-width: 200px;
+}
+
+.phoneButton{
+    font-family: 'Bebas Neue';
+    font-size: 16px;
+    padding: 5px 20px;
+}
+
+.media{
+    padding-top: 45px;
+    padding-bottom: 25px;
+    background-color: gray;
+    width: 20%;
+    min-width: 228px;
+    border-radius: 2em;
+    opacity: 90%;
+}
+
+.mediaRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.mediaButton{
+    width: 50px;
+    height: 40px;
+    margin: 20px;
+}
+
+.bird{
+    font-size: large;
+    font-weight: bold;
+    margin: 0 4px 8px 6px;
+    padding: 7px 0 2px 0;
+}
+
+.book{
+    color: blue;
+    font-weight: 550;
+    font-size: x-large;
+}
+
+.tube{
+    background-color: red;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    margin: 1px 10px 1px 10px;
+    padding: 2px 0 1px 4px;
+    border-radius: 4px;
+}
+
+.gram{
+    font-size: xx-large;
+    color: darkorange;
 }

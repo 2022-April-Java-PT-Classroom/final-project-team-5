@@ -4,10 +4,15 @@ import style from './style.module.scss';
 const Email = () => {
     return (
       <div className={style.container}>
+        <div className={style.callus}>
+            <h2><i>&#9990;</i> Call</h2>
+            <button className={style.phoneButton}>(216) 555-0142</button>
+        </div>
+        
         <div className={style.emailus}>
             <form action="email-us">
                 <div className={style.email}>
-                        <h5><i>&#9993;</i> E-mail us!</h5>
+                        <h2><i>&#9993;</i> E-mail</h2>
                         <input placeholder=" Email Address" type="email" required />
                      <div>
                         <textarea placeholder=" Message here" rows="10" cols="50" required></textarea>
@@ -19,18 +24,16 @@ const Email = () => {
             </form>
         </div>
 
-        <div className={style.callus}>
-            <h5><i>&#9990;</i> Call us!</h5>
-            <button>(216) 555-0142</button>
-
-        </div>
-        
         <div className={style.media}>
-            <h5><i>&#8886;</i> Connect with us!</h5>
-            <button className={style.mediaButton}>&#128330;</button>
-            <button className={style.mediaButton}>f</button>
-            <button className={style.mediaButton}><p>&#9655;</p></button>
-            <button className={style.mediaButton}>&#10695;</button>
+            <h2><i>&#8886;</i> Connect</h2>
+            <div className={style.mediaRow}>  
+              <button className={style.mediaButton}><p className={style.bird}>&#128330;</p></button>
+              <button className={style.mediaButton}><p className={style.book}>f</p></button>
+            </div>
+            <div className={style.mediaRow}>
+              <button className={style.mediaButton}><p className={style.tube}>&#9655;</p></button>
+              <button className={style.mediaButton}><p className={style.gram}>&#10695;</p></button>
+            </div>
         </div>
       </div>
     );
