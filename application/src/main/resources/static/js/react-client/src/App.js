@@ -8,11 +8,11 @@ import style from './style.module.scss';
 const App = () => {
   return (
    <BrowserRouter>
-   <Header/>
    <div className={style.pages}>
   
     <AppRouter/>
    </div>
+   <Header/>
    <Footer/>
    </BrowserRouter>
   );

@@ -1,10 +1,10 @@
 import { React, useState } from "react";
 
-import Question from "../faq-screen/question.js";
+import Question from "./question";
 import data from "./data";
 import style from './style.module.scss';
 
-function Apps() {
+function App() {
   const [question, setQuestion] = useState(data);
  
  
@@ -22,4 +22,4 @@ function Apps() {
   );
 }
 
-export default Apps; 
+export default App; 
