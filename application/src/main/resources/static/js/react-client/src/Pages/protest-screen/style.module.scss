@@ -4,16 +4,72 @@
     padding-top: 1.5rem;
     font-family:'Bebas Neue';
 
-    // font-size: 100;
-    // justify-content: center;
-
 }
 .title{
-  font-size: xx-large;
+  font-size: 75px;
+}
+
+.howTo{
+  background-image: url('../../Assets/Images/streetProtest.jpg');
+  background-size: contain;
+  color:white;
+  opacity: 93%;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  font-size: 30px;
+  text-align: center;
+}
+
+
+.rights{
+  background-image: url('../../Assets/Images/streetProtest2.jpg');
+  background-size: contain;
+  color:white;
+  opacity: 93%;
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.organizations{
+ font-family: 'Bebas Neue';
+ display:grid;
+ gap: 75px 100px;
+ padding-left: 10px;
+ padding-right: 10px;
+ background-color: white;
+ opacity: 93%;
+}
+
+.subheading{
+  font-family: 'Bebas Neue';
+  background-color: white;
+  opacity: 93%;
+  font-size: 30px;
+  font-weight: lighter;
+  text-align:center;
+  padding-bottom: 3rem;
+}
+.lgbtqRights{
+  border: 1px solid black;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.culturalRights {
+  border: 1px solid black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+.womensRights {
+  border: 1px solid black;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 
 .resources {
-display: flex;
+  display: inline-block;
   justify-content: center;
   font-size: 16px;
   font-weight: 200;
@@ -45,3 +101,37 @@ display: flex;
   top: 0px;
   left: 0px;
 }
+.resources2 {
+  display:block;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 50px 50px 10px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+   margin: 2rem;
+  
+}
+.resources2:after {
+  content: "";
+  background-color: #FFE54C;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.resources2:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
