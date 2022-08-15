@@ -1,0 +1,64 @@
+.eventForm{
+    background-color: gray;
+    border-radius: 2rem;
+    justify-content: center;
+    opacity: 90%;
+    padding: 50px;
+    padding-bottom: 120px;
+    margin: 20px;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 100px 50px 100px;
+    grid-template-rows: 70px auto 70px; 
+    column-gap: 10px;
+    row-gap: 3px;
+    width: 50rem;
+    margin-left: 45rem;
+    
+    & input{
+      display: flex;
+      padding: 10px;
+      margin-bottom: 2px;
+      
+    }
+
+    & textarea{
+      padding: 10px;
+    }
+  
+}
+
+.eventButton{
+    display: flex;
+  background-color: black;
+  font-family: 'Bebas Neue';
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 10px 35px 5px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+   margin-left: 18rem;
+   margin-top: -11rem;
+}
+.eventButton:after {
+  content: "";
+  background-color: #FFE54C;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.eventButton:hover:after {
+  top: 0px;
+  left: 0px;
+}
