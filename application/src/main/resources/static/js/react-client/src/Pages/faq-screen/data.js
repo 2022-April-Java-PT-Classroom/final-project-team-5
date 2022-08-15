@@ -1,4 +1,5 @@
 const data = [
+
   {
     id: 1,
     title: "What is Agape's  mission?",
@@ -7,7 +8,7 @@ const data = [
 
   {
     id: 2,
-    title: "Is this social site great to use for learning new things?",
+    title: "Is this site great to use for learning new things?",
     info: "Yes,also this is a social site for fun and making friendship.",
   },
 
@@ -32,7 +33,7 @@ const data = [
    
    id: 6,
    title: "Do I need to create an account to be part of this social site?",
-   info: "Yes.",
+   info: "No.",
   
 }
 ];
