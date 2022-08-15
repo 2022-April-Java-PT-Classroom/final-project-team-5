@@ -32,21 +32,21 @@ const ProtestScreen=()=>{
        <section className={style.lgbtqRights}>
           <h2>LGBTQ Organizations</h2>
             <a href="https://www.thetaskforce.org/" target='_blank'><button className={style.resources2}>National LGBTQ Taskforce</button></a>
-            <a href="https://www.hrc.org/" target='_blank'><button className={style.resources2}>Human Rights Campaign</button></a>
             <a href="https://www.lambdalegal.org/" target='_blank'><button className={style.resources2}>Lambda Legal for Assistance</button></a>
+            <a href="https://www.hrc.org/" target='_blank'><button className={style.resources2}>Human Rights Campaign</button></a>
       </section>
    
       <section className={style.culturalRights}>
          <h2>Rights of Minorities Organizations</h2>
-          <a href="https://civilrights.org/" target='_blank'><button className={style.resources2}>Civil and Human Rights of all Persons</button></a>
           <a href="https://colorofchange.org/" target='_blank'><button className={style.resources2}>Color of Change</button></a>
+          <a href="https://civilrights.org/" target='_blank'><button className={style.resources2}> Rights of all Persons</button></a>
           <a href="https://www.equalrights.org/" target='_blank'><button className={style.resources2}>Media Justice</button></a>
       </section>
 
        <section className={style.womensRights}>
           <h2>Womens Rights Organizations</h2>
-            <a href="https://now.org/" target='_blank'><button className={style.resources2}>National Organization for Women</button></a>
             <a href="https://feminist.org/" target='_blank'><button className={style.resources2}>Feminist Majority Foundation</button></a>
+            <a href="https://now.org/" target='_blank'><button className={style.resources2}>National Organization for Women</button></a>
             <a href="https://www.equalrights.org/" target='_blank'><button className={style.resources2}>Equal Rights Advocates</button></a>
        </section> 
    
