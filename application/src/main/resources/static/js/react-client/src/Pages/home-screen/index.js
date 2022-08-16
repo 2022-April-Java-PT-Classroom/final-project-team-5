@@ -1,3 +1,6 @@
+
+import React from 'react';
+
 import GhandiPhoto from "../../Assets/Images/GhandiQoute.png";
 import React from 'react';
 import endRacism from "../../Assets/Images/endRacism.jpg";
@@ -6,14 +9,17 @@ import lgbtq from '../../Assets/Images/lgbtq.jpg';
 import lgbtq2 from "../../Assets/Images/lgbtq2.jpg";
 import mlk from "../../Assets/Images/mlkqoute.png";
 import myBody3 from "../../Assets/Images/myBody3.jpg";
+
+import pride from "../../Assets/Images/pridelgbtq.png";
 import protest from"../../Assets/Images/clay-banks-OvGIFsexb-8-unsplash.jpg";
 import rosaParks from "../../Assets/Images/rosaParks.png";
+
 import style from './style.module.scss';
 
 const HomeScreen=()=>{
     return(
         <main>
-<section className={style.slideshow}>
+{/* <section className={style.slideshow}>
       <div className={style.entireContent}>
         <div className={style.contentCarrousel}>
           <figure className={style.shadow}><img src={protest}/></figure>
@@ -22,14 +28,14 @@ const HomeScreen=()=>{
           <figure className={style.shadow}><img src={lgbtq}/></figure>
           <figure className={style.shadow}><img src={mlk}/></figure>
           <figure className={style.shadow}><img src={humanity}/></figure>
-          <figure className={style.shadow}><img src={lgbtq2}/></figure>
+          <figure className={style.shadow}><img src={pride}/></figure>
           <figure className={style.shadow}><img src={rosaParks}/></figure>
           <figure className={style.shadow}><img src={endRacism}/></figure>
     </div>
     <h2 className={style.mission1}>Our Mission:</h2>    
     <h2 className={style.mission2}>Agape exist to band people together to fight against the injustices we are witnessing everyday in a safe and educated manner.</h2>
   </div>
-</section>
+</section> */}
            
 
             <div className={style.post}>
