@@ -17,6 +17,16 @@
 }
 
 .postHeader{
+    font-family: Bebas Neue;
+    padding-top: 1rem;
+}
+
+.postBlurb{
+    font-family: Lato;
+
+}
+
+.createPost{
     padding-top: 1rem;
 }
 
@@ -42,4 +52,12 @@ body {
     font-family: Lato;
     border-width: thin;
 }
+
+// .postForum{
+//     display: flex;
+//     justify-content: center;
+//     background-color: gray;
+//     border-radius: 2rem;
+//     width: 20rem;
+// }
 
