@@ -2,7 +2,7 @@
 
 import { React, useState } from "react";
 
-import style from './style.module.scss';
+// import style from './style.module.scss';
 
 const Question = function ({ title, info }) {
   const [showInfo, setShowInfo] = useState(false);
@@ -18,10 +18,11 @@ const Question = function ({ title, info }) {
 
         </div>
 
-        {showInfo && <p>{info}</p>}
-      </header>
-    </article>
-  );
-};
 
-export default Question; 
+//         {showInfo && <p>{info}</p>}
+//       </header>
+//     </article>
+//   );
+// };
+
+// export default Question; 
