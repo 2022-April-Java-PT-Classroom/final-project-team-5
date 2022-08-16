@@ -1,15 +1,13 @@
-
-import protest from"../../Assets/Images/clay-banks-OvGIFsexb-8-unsplash.jpg";
 import GhandiPhoto from "../../Assets/Images/GhandiQoute.png";
+import React from 'react';
+import endRacism from "../../Assets/Images/endRacism.jpg";
+import humanity from "../../Assets/Images/humanity.jpg";
+import lgbtq from '../../Assets/Images/lgbtq.jpg';
+import lgbtq2 from "../../Assets/Images/lgbtq2.jpg";
 import mlk from "../../Assets/Images/mlkqoute.png";
 import myBody3 from "../../Assets/Images/myBody3.jpg";
-import lgbtq from '../../Assets/Images/lgbtq.jpg';
-import endRacism from "../../Assets/Images/endRacism.jpg";
+import protest from"../../Assets/Images/clay-banks-OvGIFsexb-8-unsplash.jpg";
 import rosaParks from "../../Assets/Images/rosaParks.png";
-import humanity from "../../Assets/Images/humanity.jpg";
-import lgbtq2 from "../../Assets/Images/lgbtq2.jpg";
-
-import React from 'react';
 import style from './style.module.scss';
 
 const HomeScreen=()=>{
@@ -35,9 +33,9 @@ const HomeScreen=()=>{
            
 
             <div className={style.post}>
-                 <a href="/lgbtq" className={style.buttons}><h2 className={style.title}>LGBTQ Rights</h2></a>
-                 <a href="/racial" className={style.buttons}><h2 className={style.title}>Cultural Rights</h2></a>
-                 <a href="/women" className={style.buttons}><h2 className={style.title}>Women's Rights </h2></a>
+                 <a href="/lgbtq" className={style.buttons}><h2 className={style.title}>LGBTQ News</h2></a>
+                 <a href="/racial" className={style.buttons}><h2 className={style.title}>Cultural News</h2></a>
+                 <a href="/women" className={style.buttons}><h2 className={style.title}>Women's News </h2></a>
               
             </div>
     
