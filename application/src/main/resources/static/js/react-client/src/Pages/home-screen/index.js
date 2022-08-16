@@ -1,17 +1,15 @@
 
+
 import React from 'react';
 import GhandiPhoto from "../../Assets/Images/GhandiQoute.png";
 import endRacism from "../../Assets/Images/endRacism.jpg";
 import humanity from "../../Assets/Images/humanity.jpg";
 import lgbtq from '../../Assets/Images/lgbtq.jpg';
-
 import mlk from "../../Assets/Images/mlkqoute.png";
 import myBody3 from "../../Assets/Images/myBody3.jpg";
-
 import pride from "../../Assets/Images/pridelgbtq.png";
 import protest from"../../Assets/Images/clay-banks-OvGIFsexb-8-unsplash.jpg";
 import rosaParks from "../../Assets/Images/rosaParks.png";
-
 import style from './style.module.scss';
 
 const HomeScreen=()=>{
