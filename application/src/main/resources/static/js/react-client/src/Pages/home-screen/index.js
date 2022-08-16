@@ -1,13 +1,13 @@
 
-import protest from"../../Assets/Images/clay-banks-OvGIFsexb-8-unsplash.jpg";
-import GhandiPhoto from "../../Assets/Images/GhandiQoute.png";
-import mlk from "../../Assets/Images/mlkqoute.png";
-import myBody3 from "../../Assets/Images/myBody3.jpg";
-import lgbtq from '../../Assets/Images/lgbtq.jpg';
-import endRacism from "../../Assets/Images/endRacism.jpg";
-import rosaParks from "../../Assets/Images/rosaParks.png";
-import humanity from "../../Assets/Images/humanity.jpg";
-import lgbtq2 from "../../Assets/Images/lgbtq2.jpg";
+// import protest from"../../Assets/Images/clay-banks-OvGIFsexb-8-unsplash.jpg";
+// import GhandiPhoto from "../../Assets/Images/GhandiQoute.png";
+// import mlk from "../../Assets/Images/mlkqoute.png";
+// import myBody3 from "../../Assets/Images/myBody3.jpg";
+// import lgbtq from '../../Assets/Images/lgbtq.jpg';
+// import endRacism from "../../Assets/Images/endRacism.jpg";
+// import rosaParks from "../../Assets/Images/rosaParks.png";
+// import humanity from "../../Assets/Images/humanity.jpg";
+// import lgbtq2 from "../../Assets/Images/lgbtq2.jpg";
 
 import React from 'react';
 import style from './style.module.scss';
@@ -15,7 +15,7 @@ import style from './style.module.scss';
 const HomeScreen=()=>{
     return(
         <main>
-<section className={style.slideshow}>
+{/* <section className={style.slideshow}>
       <div className={style.entireContent}>
         <div className={style.contentCarrousel}>
           <figure className={style.shadow}><img src={protest}/></figure>
@@ -31,7 +31,7 @@ const HomeScreen=()=>{
     <h2 className={style.mission1}>Our Mission:</h2>    
     <h2 className={style.mission2}>Agape exist to band people together to fight against the injustices we are witnessing everyday in a safe and educated manner.</h2>
   </div>
-</section>
+</section> */}
            
 
             <div className={style.post}>
