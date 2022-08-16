@@ -35,7 +35,7 @@ const PostsScreen = () => {
             <h3>A Safe Place to Educate Yourself On Important Differences & Bring Us Closer Together</h3>
             <h2 className={style.postHeader}>Speak Out</h2> 
             {loading ? <h3>One Moment...</h3> : allPosts.map(post => (
-                <a key={post.id} href={`post/${post.id}`}><p className={style.allPosts}>{post.bodyOfPost}</p></a>
+                <a key={post.id} href={`post/${post.id}`}><h2 className={style.postContentTitle}>{post.title}</h2><p className={style.allPosts}>{post.bodyOfPost}</p></a>
             ))}
             <div>
             <section className={style.postForum}>

@@ -1,0 +1,8 @@
+.postForm{
+    padding-top: 1rem;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100px;
+    grid-template-rows: 70px auto; 
+    row-gap: 3px;
+}

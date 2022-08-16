@@ -65,7 +65,7 @@ return (
       
         {loadingPost ? <h3>Loading...</h3> :
                  <div className={style.post}>
-    
+                    <h1 className={style.postContent}>{post.title}</h1>
                     <p className={style.postBox}>{post.bodyOfPost}</p>
                     
                 </div>
@@ -74,6 +74,7 @@ return (
 }
 {post.comments && post.comments.map(comment=> (
   <div key={comment.id}>
+                      
                       <p className={style.comment}>{comment.commentContent}</p>
                       </div>
                   ))}
