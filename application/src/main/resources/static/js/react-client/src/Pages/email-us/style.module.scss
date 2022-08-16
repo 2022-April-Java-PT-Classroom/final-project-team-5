@@ -1,35 +1,157 @@
-.emailus{
-    background-color: rgb(229, 240, 232);
-    position:relative;
-    justify-content: center;
-    justify-items: center;
-    width: 50%;
-    margin-left: 15%;
-    
-    
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 100px;
 }
+
+.phoneButton, .emailButton, .mediaButton {
+    justify-content: center;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+     margin: 2rem;
+  }
+
+  .phoneButton:after, .emailButton:after, .mediaButton:after {
+    content: "";
+    background-color: #FFE54C;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 4px;
+    left: 6px;
+    transition: 0.2s;
+  }
+
+  .phoneButton:hover:after, .emailButton:hover:after, .mediaButton:hover:after {
+    top: 0px;
+    left: 0px;
+  }
+
+.emailus{
+    padding-top: 25px;
+    background-color: gray;
+    justify-content: center;
+    width: 40%;
+    min-width: 450px;
+    border-radius: 2rem;
+    opacity: 90%;
+    margin: 5px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+}
+
 .email{
     text-align: center;
-    margin-top: 95px;
-    margin-left: 25%;
-    font-size: 50px;
     font-weight: bold;
-    margin-left: 10px;
     justify-content: center;
     justify-items: center;
-
 }
+
+.email h2{
+    margin-bottom: 3px;
+}
+
+.email input{
+    margin-bottom: 3px;
+}
+
 .emailButton{
+    font-family: 'Bebas Neue';
     margin-left: 50%;
-    text-align: center;
-    font-size: 15px;
-    font-weight: bold;
-
-    width: 70px;
-    background-color: rgb(144, 166, 158);
-    border-radius: 5px;
+    font-size: 16px;
+    outline: 0;
+    padding: 5px 20px;
 }
 
-.emailButton:hover{
-    background-color: rgb(170, 138, 33);
+.callus{
+    padding-top: 45px;
+    padding-bottom: 35px;
+    background-color: gray;
+    justify-content: center;
+    width: 20%;
+    border-radius: 2em;
+    opacity: 90%;
+    min-width: 225px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.callus p{
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+.phoneButton{
+    font-family: 'Bebas Neue';
+    font-size: 22px;
+    padding: 5px 20px;
+    margin-top: 2em;
+    min-width: 166px;
+}
+
+.media{
+    padding-top: 45px;
+    padding-bottom: 25px;
+    background-color: gray;
+    width: 20%;
+    min-width: 228px;
+    border-radius: 2em;
+    opacity: 90%;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.mediaRow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1.5em;
+    padding: 0 1.5em;
+}
+
+.mediaButton{
+    width: 50px;
+    height: 40px;
+    margin: 20px;
+}
+
+.bird{
+    font-size: large;
+    font-weight: bold;
+    margin: 0 4px 8px 6px;
+    padding: 7px 0 2px 0;
+}
+
+.book{
+    color: blue;
+    font-weight: 550;
+    font-size: x-large;
+}
+
+.tube{
+    background-color: red;
+    font-size: large;
+    font-weight: bold;
+    color: white;
+    margin: 1px 10px 1px 10px;
+    padding: 2px 0 1px 4px;
+    border-radius: 4px;
+}
+
+.gram{
+    font-size: xx-large;
+    color: darkorange;
 }
