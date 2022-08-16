@@ -7,6 +7,7 @@ const Email = () => {
         <div className={style.callus}>
             <h2><i>&#9990;</i> Call</h2>
             <button className={style.phoneButton}>(216) 555-0142</button>
+            <p>M-F 8am-10pm ET</p>
         </div>
         
         <div className={style.emailus}>
