@@ -12,7 +12,9 @@
     list-style: none;
     border: none;
 }
-
+.def{
+font-family: 'Bebas Neue';
+}
 body {
     overflow-x: hidden;
     background-image: url("../../Assets/Images/clay-banks-OvGIFsexb-8-unsplash.jpg");
@@ -24,18 +26,27 @@ body {
 }
 
 .mission1{
-    padding-top: 10rem;
-    background-color: aliceblue;
+    margin-top: 15rem;
+    background-color: black;
+    color:white;
     font-size:xx-large;
     font-family: 'Bebas Neue';
+    margin-right: 15rem;
+    margin-left: 15rem;
     
 
 }
 
 .mission2{
-    font-size: large;
+    font-weight: 250;
+    font-size: x-large;
     font-family: 'Bebas Neue';
-    text-align: left;
+    text-align: center;
+    padding: 20px 50px 20px;
+    background-color: black;
+    color:white;
+    margin-right: 15rem;
+    margin-left: 15rem;
     
     
     
@@ -49,6 +60,10 @@ body {
 main {
     position: relative;
     top: 5.4rem;
+}
+
+.post{
+  margin-bottom: 8rem;
 }
 
 
@@ -97,8 +112,6 @@ main {
         padding-bottom: 3px;
         height: 450px;
         width: 100%;
-        background-color: aliceblue;
-        opacity:90%;
         box-sizing:content-box;
       }
       
