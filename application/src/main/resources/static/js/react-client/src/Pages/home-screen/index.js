@@ -14,7 +14,7 @@ import style from './style.module.scss';
 const HomeScreen=()=>{
     return(
         <main>
- <section className={style.slideshow}>
+<section className={style.slideshow}>
       <div className={style.entireContent}>
         <div className={style.contentCarrousel}>
           <figure className={style.shadow}><img src={protest}/></figure>
@@ -30,7 +30,7 @@ const HomeScreen=()=>{
     <h2 className={style.mission1}>Our Mission:</h2>    
     <h2 className={style.mission2}>Agape exist to band people together to fight against the injustices we are witnessing everyday in a safe and educated manner.</h2>
   </div>
-</section> 
+</section>
            
 
             <div className={style.post}>

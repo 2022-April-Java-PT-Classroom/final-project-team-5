@@ -26,14 +26,15 @@ const Email = () => {
         </div>
 
         <div className={style.media}>
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"></link>
             <h2><i>&#8886;</i> Connect</h2>
             <div className={style.mediaRow}>  
-              <button className={style.mediaButton}><p className={style.bird}>&#128330;</p></button>
-              <button className={style.mediaButton}><p className={style.book}>f</p></button>
+              <button className={style.mediaButton}><p className={style.bird}><i class="uil uil-twitter"></i></p></button>
+              <button className={style.mediaButton}><p className={style.book}><i class="uil uil-facebook-f"></i></p></button>
             </div>
             <div className={style.mediaRow}>
-              <button className={style.mediaButton}><p className={style.tube}>&#9655;</p></button>
-              <button className={style.mediaButton}><p className={style.gram}>&#10695;</p></button>
+              <button className={style.mediaButton}><p className={style.tube}><i class="uil uil-youtube"></i></p></button>
+              <button className={style.mediaButton}><p className={style.gram}><i class="uil uil-instagram"></i></p></button>
             </div>
         </div>
       </div>
