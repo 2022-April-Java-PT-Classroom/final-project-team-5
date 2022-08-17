@@ -46,6 +46,8 @@
     -webkit-user-select: none;
     touch-action: manipulation;
      margin: 2rem;
+     overflow-y: scroll;
+    scrollbar-width: thin;
       
   }
   .eachBio:after {
