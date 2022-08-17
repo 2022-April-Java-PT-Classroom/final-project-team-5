@@ -1,5 +1,4 @@
 const data = [
-
   {
     id: 1,
     title: "What is Agape's  mission?",
@@ -9,13 +8,13 @@ const data = [
   {
     id: 2,
     title: "Is this site great to use for learning new things?",
-    info: "Yes,also this is a social site for fun and making friendship.",
+    info: "Yes, this is a site  a safe place to educate yourself 0n important differences & bring us closer together.",
   },
 
   {
     id: 3,
-    title: "Can I leave a comment?",
-    info: "Yes, absolutely.",
+    title: "Can I make a donation?",
+    info: "No.However, you can  support by attending the varoius events and vocalizing your thoughts peacefully .",
   },
 
   {
@@ -32,8 +31,8 @@ const data = [
 {
    
    id: 6,
-   title: "Do I need to create an account to be part of this social site?",
-   info: "No.",
+   title: "Do I need to create an account to be part of this site?",
+   info: "Yes.",
   
 }
 ];
