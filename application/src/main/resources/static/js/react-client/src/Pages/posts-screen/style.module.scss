@@ -3,31 +3,46 @@
 
 .allPostsContainer{
     padding-top: 2rem;
-    border-radius: 1rem;
+    border-radius: 3px;
     padding: 1rem;
     margin-top: 1rem;
-    background-color: #ECF0F1;
+    background-color: rgba(128,128,128,0.9);
     text-align: center;
-    height: 900px;
-    max-height: 1000px;
-    opacity: 89%;
-    width: 70%;
-    margin-left: auto;
-    margin-right:auto;
+    height: auto;
+    // height: 900px;
+    // max-height: 1000px;
+    width: fit-content;
+    margin: auto;
+   padding: 3rem;
+    position: relative;
 }
 
 .postHeader{
     font-family: Bebas Neue;
     padding-top: 1rem;
+    font-size: 75px;
 }
 
 .postBlurb{
     font-family: Lato;
+    padding-bottom: 2rem;
 
 }
 
 .createPost{
-    padding-top: 1rem;
+    margin-top: 3rem;
+    padding-top: 20px;
+    font-family: Bebas Neue;
+    font-size: 30px;
+    color: #ECF0F1;
+}
+
+.createPara{
+    font-family: Lato;
+    font-weight: lighter;
+    color: #ECF0F1;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 body {
@@ -42,9 +57,9 @@ body {
 }
 
 .allPosts {
-    border-style: none none solid;
+    // z-index: +3;
     padding-top: 5px;
-    padding-bottom: 1rem;
+    // padding-bottom: rem;
     border-color: #010101;
     font-weight: 1000;
     font-size: 18px;
@@ -52,11 +67,41 @@ body {
     border-width: thin;
 }
 
-// .postForum{
-//     display: flex;
-//     justify-content: center;
-//     background-color: gray;
-//     border-radius: 2rem;
-//     width: 20rem;
-// }
+.postLiner{
+    border-style: none none solid;
+    border-color: #010101;
+    color: black;
+    // padding: 2em 2em 2em 2em;
+    // margin: 2em 2em 2em 2em;
+    font-size: 16px;
+    line-height: 1.618em;
+    background: #ECF0F1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+    width: fit-content;
+    min-width: 500px;
+    max-height: fit-content;
+    min-height: 2rem;
+    margin: auto;
+    z-index: +1;
+}
+
+.postLiner:hover{
+    color: #FFE54C;
+    background-color: #000000;
+}
+
+.postForum{
+
+    background-color: black;
+    border-radius: 3px;
+    width: 35rem;
+    margin: auto;
+    z-index: +1;
+    position: relative;
+    margin-bottom: 1rem;
+}
 

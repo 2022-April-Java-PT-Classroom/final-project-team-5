@@ -1,13 +1,51 @@
 .postForm{
     align-self: center;
-    background-color: gray;
+    background-color: black;
     border-radius: 2rem;
-    width: 20rem;
+    width: fit-content;
     padding-top: 1rem;
     display: grid;
     justify-content: center;
     grid-template-columns: 100px;
     grid-template-rows: 70px auto; 
     row-gap: 3px;
+    margin: auto;
+    z-index: -1;
+    position: relative;
+}
 
+.postButton{
+    display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  font-family: 'Bebas Neue';
+  
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 10px 12px 5px;
+  outline: 0;
+  border: 1px solid white;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+   margin-left: -10rem;
+   margin-top: -4rem;
+}
+.postButton:after {
+  content: "";
+  background-color: #FFE54C;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+.postButton:hover:after {
+  top: 0px;
+  left: 0px;
 }
