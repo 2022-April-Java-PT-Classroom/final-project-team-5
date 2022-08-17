@@ -57,17 +57,23 @@ body {
 }
 
 .allPosts {
-    // z-index: +3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    z-index: +3;
     padding-top: 5px;
-    // padding-bottom: rem;
+    padding-bottom: 1rem;
     border-color: #010101;
     font-weight: 1000;
     font-size: 18px;
     font-family: Lato;
     border-width: thin;
+    max-width: 500px;
+  
 }
 
 .postLiner{
+
     border-style: none none solid;
     border-color: #010101;
     color: black;
@@ -81,7 +87,7 @@ body {
     5px 5px 15px 5px rgba(0,0,0,0);
     box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0,0,0,0);
-    width: fit-content;
+    max-width: fit-content;
     min-width: 500px;
     max-height: fit-content;
     min-height: 2rem;

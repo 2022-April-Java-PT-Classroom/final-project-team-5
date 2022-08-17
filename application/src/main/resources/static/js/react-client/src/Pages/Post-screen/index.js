@@ -58,7 +58,7 @@ then((response) => {
   
 return (
   
-  loadingPost ? <h2 className={style.singlePostLoad}>Loading</h2> :
+  loadingPost ? <h2 className={style.singlePostLoad}>Post Loading...</h2> :
   
   <div className={style.postInfo}>
   
@@ -78,17 +78,17 @@ return (
                       <p className={style.comment}>{comment.commentContent}</p>
                       </div>
                   ))}
-                 
+              <div className={style.form}>
               <form onSubmit={handleSubmit}>
                 <input type="text"
                 name="commentContent"
                 value={commentState.commentContent}
                 onChange={handleChange}
                 placeholder='Add Comment'
-            />
-            <button type='submit'>Add Comment</button>
+                 />
+            <button className={style.commentButton} type='submit'>Add Comment</button>
             </form>
-  
+            </div>  
     </div>
     
     // <div>
