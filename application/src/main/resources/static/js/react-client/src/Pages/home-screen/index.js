@@ -1,9 +1,10 @@
-import GhandiPhoto from "../../Assets/Images/GhandiQoute.png";
+
+
 import React from 'react';
+import GhandiPhoto from "../../Assets/Images/GhandiQoute.png";
 import endRacism from "../../Assets/Images/endRacism.jpg";
 import humanity from "../../Assets/Images/humanity.jpg";
 import lgbtq from '../../Assets/Images/lgbtq.jpg';
-import lgbtq2 from "../../Assets/Images/lgbtq2.jpg";
 import mlk from "../../Assets/Images/mlkqoute.png";
 import myBody3 from "../../Assets/Images/myBody3.jpg";
 import pride from "../../Assets/Images/pridelgbtq.png";
@@ -14,6 +15,7 @@ import style from './style.module.scss';
 const HomeScreen=()=>{
     return(
         <main>
+          <h3 className={style.def}>Agape (ag-ah-pay) love, benevolence, good will, esteem </h3>
 <section className={style.slideshow}>
       <div className={style.entireContent}>
         <div className={style.contentCarrousel}>
@@ -27,9 +29,9 @@ const HomeScreen=()=>{
           <figure className={style.shadow}><img src={rosaParks}/></figure>
           <figure className={style.shadow}><img src={endRacism}/></figure>
     </div>
+  </div>
     <h2 className={style.mission1}>Our Mission:</h2>    
     <h2 className={style.mission2}>Agape exist to band people together to fight against the injustices we are witnessing everyday in a safe and educated manner.</h2>
-  </div>
 </section>
            
 
