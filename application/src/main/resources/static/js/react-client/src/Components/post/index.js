@@ -7,7 +7,8 @@ const AddPost=({ posts })=>{
   
   
     const[addPostState, setAddPostState] = useState({
-        bodyOfPost: ""
+      title: "",
+      bodyOfPost: ""
     });
 
     const handleChange = (e) => {
@@ -21,6 +22,7 @@ const AddPost=({ posts })=>{
   const handleSubmit = (e) => {
     
     const userData = {
+      title: addPostState.title,
       bodyOfPost: addPostState.bodyOfPost
     };
 
@@ -34,6 +36,13 @@ const AddPost=({ posts })=>{
      
         <div className={style.postForm}>
             <form onSubmit={handleSubmit}>
+            <input
+                type='text'
+                name="title"
+                value={addPostState.title}
+                onChange={handleChange}
+                placeholder="Title"
+              />
                <textarea 
                 name="bodyOfPost"
                 value={addPostState.bodyOfPost}

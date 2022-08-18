@@ -31,15 +31,16 @@ const PostsScreen = () => {
 
     return(
         <div className={style.allPostsContainer}>
-            <h2>Questions</h2>
-            <h3>A Safe Place to Educate Yourself On Important Differences & Bring Us Closer Together</h3>
-            <h2 className={style.postHeader}>Speak Out</h2> 
+            <h2 className={style.postHeader}>Speak Out!</h2> 
+            <h3 className={style.postBlurb}>A Safe Place to Educate Yourself On Important Differences & Bring Us Closer Together</h3>
+            
             {loading ? <h3>One Moment...</h3> : allPosts.map(post => (
-                <a key={post.id} href={`post/${post.id}`}><p className={style.allPosts}>{post.bodyOfPost}</p></a>
+                <a key={post.id} href={`post/${post.id}`}> <div className={style.postLiner}><h2 className={style.postContentTitle}>{post.title}</h2><p className={style.allPosts}>{post.bodyOfPost}</p></div></a>
             ))}
             <div>
             <section className={style.postForum}>
-        <h2>Create A Post</h2>
+        <h2 className={style.createPost}>Make Yourself Heard</h2>
+        <p className={style.createPara}>Share your own experience or ask a question</p>
         <AddPost posts={allPosts} />
         </section>
             </div>
