@@ -9,30 +9,30 @@ const data = [
   {
     id: 2,
     title: "Is this site great to use for learning new things?",
-    info: "Yes,also this is a social site for fun and making friendship.",
+    info: "Yes, this site helps us to understand  important differences among us and bring us closer together.",
   },
 
   {
     id: 3,
     title: "Can I leave a comment?",
-    info: "Yes, absolutely.",
+    info: "Yes, absolutely. Your comments help make our site better.",
   },
 
   {
     id: 4,
     title: "Is this a kid friendly website?",
-    info: "No, this site is more friendly to adult. However,there is no age restriction to visit it.",
+    info: "No, this site is more friendly to adult. However,there is no age restrictions to visit it.",
   },
 
   {
     id: 5,
-    title: "Do I need to pay for membership?",
-    info: "No.",
+    title: "How can I help this site to grow?",
+    info: "Your active presence  during the scheduled events, and peacefull vocalization of our mission can help us.",
   },
 {
    
    id: 6,
-   title: "Do I need to create an account to be part of this social site?",
+   title: "Do I need to create an account to be part of this site?",
    info: "No.",
   
 }
