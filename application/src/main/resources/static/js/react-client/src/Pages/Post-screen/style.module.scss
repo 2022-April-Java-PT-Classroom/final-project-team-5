@@ -3,12 +3,14 @@
 
 
 
-// .singlePostLoad{
-//     padding-top: 10rem;
+.singlePostLoad{
+    font-family: Bebas Neue;
+    padding-top: 10rem;
     
-// }
+}
 
 .postInfo{
+  
     padding-top: 2rem;
     border-radius: 3px;
     padding: 1rem;
@@ -24,12 +26,54 @@
     position: relative;
 }
 
+.post{
+    border-style: solid;
+    border-color: #010101;
+    color: black;
+    font-size: 16px;
+    line-height: 1.618em;
+    background: #ECF0F1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+    box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0,0,0,0);
+    max-width: fit-content;
+    min-width: 500px;
+    max-height: auto;
+    min-height: 2rem;
+    margin: auto;
+    margin-bottom: 3rem;
+    padding: 2rem;
+}
+
+.postContent{
+    font-family: Bebas Neue;
+    font-size: 50px;
+    padding: 2rem;
+}
+
 .postBox{
     font-size: 20px;
     font-family: Lato;
     max-width: fit-content;
     min-width: 500px;
     padding-bottom: 2rem;
+
+    
+}
+
+.link{
+    display: flex;
+    margin-bottom: 10px;
+    font-family: Bebas Neue;
+    color: black;
+    text-decoration: underline;
+}
+
+.link:hover{
+    color: #FFE54C;
+    // text-decoration: underline;
 }
 
 // .postContent{
@@ -48,7 +92,7 @@
     5px 5px 15px 5px rgba(0,0,0,0);
     box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0,0,0,0);
-    max-width: fit-content;
+    max-width: 500px;
     min-width: 500px;
     max-height: fit-content;
     min-height: 2rem;
@@ -60,14 +104,13 @@
     padding-top: 2rem;
     background-color: black;
     border-radius: 3px;
-    width: 60rem;
+    width: fit-content;
+    height: auto;
     margin: auto;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     z-index: +1;
 
-    & input{
-        background-color: #000000;
-    }
 }
 
 .commentButton{
@@ -88,8 +131,9 @@
   -webkit-user-select: none;
   touch-action: manipulation;
   z-index: 1;
-   margin-left: 10rem;
-   margin-top: 4rem;
+
+   margin-left: 14rem;
+   margin-top: 2rem;
 }
 .commentButton:after {
   content: "";
