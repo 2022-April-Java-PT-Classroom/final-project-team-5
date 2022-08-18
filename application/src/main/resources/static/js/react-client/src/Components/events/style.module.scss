@@ -1,41 +1,40 @@
 .eventForm{
-    background-color: gray;
-    border-radius: 2rem;
+    display: flex;
     justify-content: center;
-    opacity: 90%;
-    padding: 50px;
-    padding-bottom: 120px;
-    margin: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    opacity: 99%;
+    padding-top: 12px;
+    margin-top: 20px;
     margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 100px 50px 100px;
-    grid-template-rows: 70px auto 70px; 
-    column-gap: 10px;
-    row-gap: 3px;
-    width: 50rem;
-    margin-left: 45rem;
-    
-    & input{
-      display: flex;
-      padding: 10px;
-      margin-bottom: 2px;
-      
-    }
+}
 
-    & textarea{
-      padding: 10px;
-    }
-  
+.eventInputs{
+  display: flex;
+  flex-direction: column;
+
+  & textarea{
+    padding: 3px 10px 30px;
+    width: 200px;
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+  }
+
+  & input{
+    padding: 3px 10px;
+    margin-bottom: 2px;
+  }
 }
 
 .eventButton{
-    display: flex;
+  display: flex;
   background-color: black;
   font-family: 'Bebas Neue';
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
-  padding: 10px 35px 5px;
+  padding: 15px 35px 12px;
   outline: 0;
   border: 1px solid black;
   cursor: pointer;
@@ -44,8 +43,8 @@
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-   margin-left: 18rem;
-   margin-top: -11rem;
+   //margin-left: 13rem;
+   //margin-top: -11rem;
 }
 .eventButton:after {
   content: "";
