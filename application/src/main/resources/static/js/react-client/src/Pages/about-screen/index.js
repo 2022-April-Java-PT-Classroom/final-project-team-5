@@ -1,13 +1,11 @@
-import React, { useState } from 'react';
+
 
 import Adam from '../../Assets/Images/Adam.jpg';
 import Adrian from '../../Assets/Images/Adrian.png';
-import Agape from '../../Assets/Images/Agape.png';
 import Dhana from '../../Assets/Images/Dhana.JPG';
 import Jamie from '../../Assets/Images/Jamie.png';
-import Serena from '../../Assets/Images/Serena.png';
-import Victor from '../../Assets/Images/Victor.png';
-import axios from 'axios';
+import serena from '../../Assets/Images/serena.jpg';
+import Victor from '../../Assets/Images/Victor.png'
 import style from './about.module.scss';
 
 const AboutScreen = () => {
@@ -66,9 +64,10 @@ const AboutScreen = () => {
                      an Associates degree in Network Systems Administration. 
                     I am an avid computer gamer and have great interest in computer hardware and remote control cars.</p>
 
-                 <img className={style.img} src={Serena} alt='' />
-                 <h2 className={style.Name}>Serena Howard</h2>
-                <p className={style.eachBio}> I am a full stack software developer located in Columbus,OH who is exited about adding to 
+
+                 <img className={style.img} src={serena} alt='' />
+                 <h2>Serena Howard</h2>
+                <p> I am a full stack software developer located in Columbus,OH who is exited about adding to 
                     the numbers of
                      women in tech and developing my skills. </p>
               </div>
