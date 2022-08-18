@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas-Neue');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+
 
 .singlePostLoad{
     padding-top: 10rem;
@@ -20,10 +23,14 @@
     margin-right:auto;
 }
 
-.post{
-    font-size: 3rem;
+.postBox{
+    font-size: 20px;
     font-weight: 800;
-    font-family: Bebas-Neue;
+    font-family: Lato;
+}
+
+.postContent{
+    font-family: Bebas Neue;
 }
 
 .comment {

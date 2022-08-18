@@ -42,8 +42,8 @@ const AddEventElement = ({ events }) => {
     };
 
     return (
-        <div className={style.eventForm}>
-            <form onSubmit={handleSubmit}>
+            <form className={style.eventForm} onSubmit={handleSubmit}>
+              <div className={style.eventInputs}> 
                 <input
                     type="text"
                     name="eventTitle"
@@ -85,13 +85,9 @@ const AddEventElement = ({ events }) => {
                     onChange={handleChange}
                     placeholder='Event Description'
                 />
-                <button className={style.eventButton} type="submit">Add Event</button>
+              </div>   
+              <button className={style.eventButton} type="submit">Add Event</button>
             </form>
-            
-            <section className={style.eventUpdate}>
-              {/* <p>{events.eventTitle}</p> */}
-              </section>
-        </div>
     
 
  

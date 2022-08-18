@@ -14,6 +14,7 @@ public class Post {
     public Long id;
     @Lob
     public String bodyOfPost;
+    private String title;
 
     @ManyToOne
     public User userPost;
@@ -37,7 +38,12 @@ public class Post {
         return topic;
     }
 
-    public Post(String bodyOfPost, Comment...comments) {
+    public String  getTitle(){
+        return title;
+    }
+
+    public Post(String title, String bodyOfPost, Comment...comments) {
+        this.title = title;
         this.bodyOfPost = bodyOfPost;
         this.comments = new ArrayList<>(Arrays.asList(comments));
     }
