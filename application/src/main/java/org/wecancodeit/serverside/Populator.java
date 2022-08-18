@@ -33,7 +33,7 @@ public class Populator implements CommandLineRunner {
         Event cause = new Event("The Cause", "Event Test", "Cleveland", "August 23, 2022", "Jane Doe", "8");
         eventRepo.save(cause);
 
-        Post postOne = new Post("This is the first post", OMG);
+        Post postOne = new Post("The Title","This is the first post", OMG);
         postRepo.save(postOne);
     }
 }
