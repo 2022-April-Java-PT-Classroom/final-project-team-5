@@ -14,8 +14,8 @@ function App() {
         <h3 className={style.faqtitle}>Frequently asked Questions</h3>
       </header>
       <section>
-      <button className={style.btn} onClick={() => setQuestion(!setQuestion)}>
-        </button>
+      {/* <button className={style.btn} onClick={() => setQuestion(!setQuestion)}>
+        </button> */}
         {question.map((request) => {
           return <Question key={request.id} {...request} />;
         })}
