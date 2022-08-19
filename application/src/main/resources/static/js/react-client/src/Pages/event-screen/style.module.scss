@@ -87,7 +87,7 @@
 }
 
 .eventFormContainer{
-    padding: 2em;
+    padding: 1em;
     margin: 2em;
     background: gray;
     border-radius: 1rem;
@@ -99,6 +99,7 @@
     flex-wrap: wrap;
     width: 50%;
     min-width: 300px;
+    max-width: 450px;
 }
 
 
