@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas-Neue');
 
 .aboutScreen{
-    background-color: yellow;
+    background-color: #FFE54C;
    justify-content: center;
    
 
@@ -21,7 +21,7 @@
     {
       font-family:'Bebas Neue';
       background-color: black;
-      color: yellow ;
+      color: #FFE54C;
       font-size: 30px;
       text-align: center;
       text-shadow: rgb(25, 32, 26);
@@ -41,7 +41,7 @@
     border: 1px solid black;
     cursor: pointer;
     position: relative;
-    background-color:rgba($color: yellow, $alpha: .9);
+    background-color:rgba($color: #FFE54C, $alpha: .9);
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -51,22 +51,6 @@
     scrollbar-width: thin;
       
   }
-//   .eachBio:after {
-//     content: "";
-//     background-color:rgba($color: yellow, $alpha: .9);
-//     width: 100%;
-//     z-index: -1;
-//     position: absolute;
-//     height: 100%;
-//     top: 0px;
-//     left: 0px;
-//     transition: 0.2s;
-//   }
-//   .eachBio:hover:after {
-//     top: 0px;
-//     left: 0px;
-//   }
-
    
    img {
        height:250px;
@@ -90,9 +74,11 @@
        background-color:rgba($color: #ECF0F1, $alpha: .9);
        float: left;
        margin-top: 3rem;
+       margin-left: 3rem;
        padding: 60px;
        justify-items: center;
        opacity: 97%;
+       border-radius: 10px;
        
    }
    
@@ -101,10 +87,12 @@
        height:auto;
        background-color: rgba($color: #ECF0F1, $alpha: .9);
        margin-top: 3rem;
+       margin-right: 3rem;
        float: right;
        padding: 60px;
        opacity: 97%;
        justify-items: center;
+       border-radius: 10px;
 
    }
 }

@@ -58,13 +58,19 @@ then((response) => {
   
 return (
   
-  loadingPost ? <h2 className={style.singlePostLoad}>Loading</h2> :
-  
+  loadingPost ? <h2 className={style.singlePostLoad}>Post Loading...</h2> :
+  <div className={style.postContainer}>
   <div className={style.postInfo}>
   
+      <div className={style.link}>
+        
+        <a href="/forum"><h4 className={style.link}>  &#8617; Back To Forum</h4></a>
+        
+        </div>
       
         {loadingPost ? <h3>Loading...</h3> :
-                 <div className={style.post}>
+      
+      <div className={style.post}>
                     <h1 className={style.postContent}>{post.title}</h1>
                     <p className={style.postBox}>{post.bodyOfPost}</p>
                     
@@ -78,17 +84,20 @@ return (
                       <p className={style.comment}>{comment.commentContent}</p>
                       </div>
                   ))}
-                 
+              <div className={style.form}>
+                <h4 className={style.commentHeader}>Leave A Comment</h4>
               <form onSubmit={handleSubmit}>
-                <input type="text"
+                <textarea
+                required
                 name="commentContent"
                 value={commentState.commentContent}
                 onChange={handleChange}
                 placeholder='Add Comment'
-            />
-            <button type='submit'>Add Comment</button>
+                 />
+            <button className={style.commentButton} type='submit'>Add Comment</button>
             </form>
-  
+            </div>  
+    </div>
     </div>
     
     // <div>
@@ -100,6 +109,7 @@ return (
     // </div>
     //     </section>
     // </div> 
+
 );
  }  
 

@@ -30,6 +30,7 @@ const PostsScreen = () => {
     }, [allPosts]);
 
     return(
+        <div className={style.postContainer}>
         <div className={style.allPostsContainer}>
             <h2 className={style.postHeader}>Speak Out!</h2> 
             <h3 className={style.postBlurb}>A Safe Place to Educate Yourself On Important Differences & Bring Us Closer Together</h3>
@@ -44,6 +45,7 @@ const PostsScreen = () => {
         <AddPost posts={allPosts} />
         </section>
             </div>
+        </div>
         </div>
     );
     
