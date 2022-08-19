@@ -59,7 +59,7 @@ then((response) => {
 return (
   
   loadingPost ? <h2 className={style.singlePostLoad}>Post Loading...</h2> :
-  
+  <div className={style.postContainer}>
   <div className={style.postInfo}>
   
       <div className={style.link}>
@@ -85,8 +85,10 @@ return (
                       </div>
                   ))}
               <div className={style.form}>
+                <h4 className={style.commentHeader}>Leave A Comment</h4>
               <form onSubmit={handleSubmit}>
                 <textarea
+                required
                 name="commentContent"
                 value={commentState.commentContent}
                 onChange={handleChange}
@@ -95,6 +97,7 @@ return (
             <button className={style.commentButton} type='submit'>Add Comment</button>
             </form>
             </div>  
+    </div>
     </div>
     
     // <div>
@@ -106,6 +109,7 @@ return (
     // </div>
     //     </section>
     // </div> 
+
 );
  }  
 

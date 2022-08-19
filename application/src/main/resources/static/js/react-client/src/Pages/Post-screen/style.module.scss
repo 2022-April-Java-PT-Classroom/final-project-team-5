@@ -9,21 +9,28 @@
     
 }
 
+.postContainer{
+    display: flex;
+    justify-content: center;
+}
+
 .postInfo{
-  
+    margin-top: 30px;
+    // margin-bottom: 75px;
     padding-top: 2rem;
     border-radius: 3px;
     padding: 1rem;
-    margin-top: 1rem;
+    // margin-top: 100rem;
     background-color: rgba(128,128,128,0.9);
     text-align: center;
     height: auto;
     // height: 900px;
     // max-height: 1000px;
     width: fit-content;
-    margin: auto;
+    // margin: auto;
    padding: 3rem;
     position: relative;
+    // justify-self: center;
 }
 
 .post{
@@ -100,6 +107,14 @@
     z-index: +1;
 }
 
+.commentHeader{
+    font-family: Bebas Neue;
+    color: #ECF0F1;
+    padding-bottom: 2rem;
+    margin-top: -.5rem;
+    font-size: 27px;
+}
+
 .form{
     padding-top: 2rem;
     background-color: black;
@@ -110,14 +125,23 @@
     margin-top: 3rem;
     margin-bottom: 1rem;
     z-index: +1;
+    padding-bottom: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
 
+    & textarea{
+        min-width: 20rem;
+        max-width: 20rem;
+        min-height: 5rem;
+        max-height: 20rem;
+    }
 }
 
 .commentButton{
     display: flex;
   background-color: rgba(0, 0, 0, 0);
   font-family: 'Bebas Neue';
-  
+  margin: 2rem 2rem 2rem 15rem;
   font-size: 16px;
   font-weight: 200;
   letter-spacing: 1px;
@@ -132,8 +156,6 @@
   touch-action: manipulation;
   z-index: 1;
 
-   margin-left: 14rem;
-   margin-top: 2rem;
 }
 .commentButton:after {
   content: "";
