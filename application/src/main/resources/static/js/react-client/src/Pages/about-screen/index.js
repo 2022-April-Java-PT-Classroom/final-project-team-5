@@ -68,6 +68,7 @@ const AboutScreen = () => {
                  <img className={style.imgSerena} src={serena} alt='' />
                  <h2 className={style.Name}>Serena Howard</h2>
                 <p className={style.eachBio}> I am a full stack software developer located in Columbus,OH who is exited about adding to 
+
                     the numbers of
                      women in tech and developing my skills.
                 </p>
