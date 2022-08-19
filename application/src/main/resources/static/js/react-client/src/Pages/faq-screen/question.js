@@ -15,7 +15,7 @@ const Question = function ({ title, info }) {
           {showInfo ? <AiOutlineMinus /> : <AiOutlinePlus />}
           </button>
 
-        // </div>
+         </div>
 
 
        {showInfo && <p>{info}</p>}

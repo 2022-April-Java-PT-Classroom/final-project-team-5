@@ -3,7 +3,7 @@
 import Adam from '../../Assets/Images/Adam.jpg';
 import Adrian from '../../Assets/Images/Adrian.png';
 import Dhana from '../../Assets/Images/Dhana.JPG';
-import Jamie from '../../Assets/Images/Jamie.png';
+import Jamie from '../../Assets/Images/Jamie.jpg';
 import serena from '../../Assets/Images/serena.jpg';
 import Victor from '../../Assets/Images/Victor.png'
 import style from './about.module.scss';
@@ -34,9 +34,9 @@ const AboutScreen = () => {
                 <img className={style.img} src={Jamie} alt='' />
                 <h2 className={style.Name}>Jamie Barr</h2>
                 
-                <p className={style.eachBio} >"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                       incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <p className={style.eachBio} >A full-stack java developer in Philadelphia, PA, who studied at We Can Code IT
+                    bootcamp in 2022. Currently working at Amazon logistics, doing Problem Solve and Hazardous Material 
+                    management. 15 years experience in non-profits and youth development.</p>
                       
                 <img className={style.img} src={Adrian} alt='' />
                 <h2 className={style.Name}>Adrian Colter</h2>
