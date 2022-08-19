@@ -44,6 +44,7 @@ const AddPost=({ posts })=>{
                 placeholder="Title"
               />
                <textarea 
+                required
                 name="bodyOfPost"
                 value={addPostState.bodyOfPost}
                 onChange={handleChange}
