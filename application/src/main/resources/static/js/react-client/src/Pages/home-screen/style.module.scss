@@ -16,10 +16,16 @@
 font-family: 'Bebas Neue';
 background-color: #000;
 color: white;
-margin-right: 15rem;
-margin-left: 15rem;
+margin: auto;
 word-spacing: 15p;
+min-width: 10rem;
+width: 60rem;
 }
+
+.defClass{
+  color: #FFE54C;
+}
+
 body {
     overflow-x: hidden;
     background-image: url("../../Assets/Images/agapeBackground.png");
@@ -32,29 +38,32 @@ body {
 }
 
 .mission1{
+    display: flex;
     margin-top: 15rem;
     background-color: black;
     color:white;
-    font-size:xx-large;
+    // font-size:xx-large;
     font-family: 'Bebas Neue';
-    margin-right: 15rem;
-    margin-left: 15rem;
-    
-
+    margin: auto;
+    margin-top: 14rem;
+    width: 60rem;
+    min-width: 35rem;
+    justify-content: center;
+  z-index: 1;
 }
 
 .mission2{
     font-weight: 250;
-    font-size: x-large;
+    font-size: xx-large;
     font-family: 'Bebas Neue';
     text-align: center;
     padding: 20px 50px 20px;
     background-color: black;
     color:white;
-    margin-right: 15rem;
-    margin-left: 15rem;
-    
-    
+    margin: auto;
+    min-width: 35rem;
+    width: 60rem;
+
     
 }
 .container {
@@ -69,12 +78,12 @@ main {
 }
 
 .post{
-  margin-bottom: 8rem;
+  margin-bottom: 18rem;
 }
 
 
 .buttons {
-      
+      font-size: 30px;
       display: flex;
       justify-content: center;
       font-weight: 200;
@@ -88,7 +97,9 @@ main {
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
-       margin: 2rem;
+       margin: auto;
+       margin-top: 2rem;
+       max-width: 80rem;
        color: black;
     }
     .buttons:after {
@@ -119,6 +130,7 @@ main {
         height: 450px;
         width: 100%;
         box-sizing:content-box;
+        margin-bottom: 4rem;
       }
       
       .entireContent {

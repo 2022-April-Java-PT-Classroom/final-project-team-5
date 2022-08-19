@@ -37,6 +37,7 @@ const AddPost=({ posts })=>{
         <div className={style.postForm}>
             <form onSubmit={handleSubmit}>
             <input
+                required
                 type='text'
                 name="title"
                 value={addPostState.title}
