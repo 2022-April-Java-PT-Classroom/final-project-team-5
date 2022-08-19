@@ -18,7 +18,7 @@
   }
   
   .faqtitle{
-   
+    
     padding-top: 20px;
       display: flex;
       flex-direction: column;
@@ -26,8 +26,9 @@
       justify-content: center;
       font-size: calc(10px + 2vmin);
       color:black;
-      margin-bottom: 15px;
+      margin-bottom: 30px;
       font-size: 75px;
+      font-weight: bold;
       font-family: Bebas Neue;
       border-bottom: 5px #FFE54C solid;
   }
@@ -36,17 +37,32 @@
   h3{
     font-family: Bebas Neue;
     margin-top: 12px;
+    font-size: 52px;
+    font-weight: lighter;
    
   }
 
 .btn{
   background-color: rgba(0, 0, 0, 0);
-  padding: 1px;
+  border: black 1px solid;
+  padding: 4.5px 10px;
+  
+
 }
 
-  .btn::after{
-    top: 4px;
-    left: 4px;
+  // .btn::after{
+  //   top: 4x;
+  //   left: 4px;
+  //   z-index: 1;
+  //   background-color: #FFE54C;
+  //   width: 20px;
+  //   height: 20px;
+  // }
+
+
+
+  .btn:hover {
+    background-color: #FFE54C;
   }
  
 
@@ -55,6 +71,7 @@
  .faqquestion{
   color:black;
   font-family: Lato;
+  font-size: 32px;
   border-bottom: 1px black solid;
   border-radius: 3.5px;
   padding-bottom: 25px;
