@@ -1,10 +1,10 @@
 .eventForm{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    //justify-content: space-around;
+    //flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     opacity: 99%;
-    padding-top: 12px;
     margin-top: 20px;
     margin-bottom: 2rem;
 }
@@ -15,23 +15,27 @@
 
   & textarea{
     padding: 3px 10px 30px;
-    width: 200px;
-    max-width: 200px;
-    min-width: 200px;
+    width: 290px;
+    max-width: 290px;
+    min-width: 290px;
     max-height: 200px;
+    font-size: larger;
+    font-weight: bold;
   }
 
   & input{
     padding: 3px 10px;
     margin-bottom: 2px;
+    font-size: larger;
   }
 }
 
 .eventButton{
+  margin-top: 1rem;
   display: flex;
   background-color: black;
   font-family: 'Bebas Neue';
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 200;
   letter-spacing: 1px;
   padding: 15px 35px 12px;

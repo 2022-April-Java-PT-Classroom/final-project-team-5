@@ -50,6 +50,7 @@ const AddEventElement = ({ events }) => {
                     value={addEventState.eventTitle}
                     onChange={handleChange}
                     placeholder="Name of Event"
+                    required
                 />
                 <input
                     type="text"
@@ -57,6 +58,7 @@ const AddEventElement = ({ events }) => {
                     value={addEventState.eventLocation}
                     onChange={handleChange}
                     placeholder="Location"
+                    required
                 />
                 <input
                     type="text"
@@ -64,6 +66,7 @@ const AddEventElement = ({ events }) => {
                     value={addEventState.eventOrganizer}
                     onChange={handleChange}
                     placeholder="Organizer's Name"
+                    required
                 />
                 <input
                     type="time"
@@ -78,6 +81,7 @@ const AddEventElement = ({ events }) => {
                     value={addEventState.eventDate}
                     onChange={handleChange}
                     placeholder=""
+                    required
                 />
                   <textarea
                     value={addEventState.eventDescription}
