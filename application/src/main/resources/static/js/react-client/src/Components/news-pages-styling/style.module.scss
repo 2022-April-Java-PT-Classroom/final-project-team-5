@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue');
 @import url('https://fonts.googleapis.com/css2?family=Lato');
 
+.newsPage{
+display: flex;
+justify-content: center;
+
+}
 .newsContainer{
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: rgba(128,128,128, .9);
-    margin-top: 5rem;
+    margin-top: 3rem;
     padding: 2rem;
-    margin-left: 5rem;
     width: 90%;
     -webkit-box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0,0,0,0);
     box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0,0,0,0);
-    width: fit-content;
 }
+
 
 .NewLoading{
     font-family: Bebas Neue;
@@ -23,13 +27,13 @@
 
 .newsImg{
     opacity: 100%;
-    width: 50rem;
+    width: 80%;
     height: auto;
 }
 
 .newsImg:hover{
     background-color: #FFE54C;
-    padding: 1rem;
+    padding: .35rem;
 }
 
 .newsOne{
@@ -47,7 +51,7 @@
     box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0,0,0,0);
     flex-wrap: wrap;
-    width: 70rem;
+    width: 79%;
 }
 
 .newsTwo{
@@ -65,7 +69,7 @@
     box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0,0,0,0);
     flex-wrap: wrap;
-    width: 70rem;
+    width: 79%;
 }
 
 .newsThree{
@@ -83,7 +87,7 @@
     box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0,0,0,0);
     flex-wrap: wrap;
-    width: 70rem;
+    width: 79%;
 }
 
 .newsFour{
@@ -101,27 +105,27 @@
     box-shadow: 0px 10px 13px -7px #000000,
     5px 5px 15px 5px rgba(0,0,0,0);
     flex-wrap: wrap;
-    width: 70rem;
+    width: 79%;
 }
 
 .newsTitle{
     font-family: Bebas Neue;
     color: #000000;
+    font-size:35px;
+    line-height: 37px;
 }
 
 .newsTitle:hover{
-    color: white;
-    background-color: #FFE54C;
-    padding: 2px;
-    border-radius: 5px;
+    text-shadow: 0 0 1px #FFE54C, 0 0 2px #FFE54C, 0 0 2px #FFE54C, 0 0 2px #FFE54C, 0 0 2px #FFE54C;
+
 }
 
 .newsDescription{
     font-family: Lato;
-    font-size: 14px;
+    font-size: 25px;
 }
 
 .newsTagline{
     font-family: Bebas Neue;
-    font-size: 13px;
+    font-size: 20px;
 }

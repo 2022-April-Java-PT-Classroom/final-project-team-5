@@ -43,7 +43,7 @@ const WomensScreen=()=>{
             setNewsEleven(result.data.articles[11]);
             setNewsTwelve(result.data.articles[12]);
             setNewsThirteen(result.data.articles[14]);
-            setNewsFourteen(result.data.articles[15]);
+            setNewsFourteen(result.data.articles[18]);
             setNewsFifthteen(result.data.articles[16]);
             setNewsSixteen(result.data.articles[17]);
         };
@@ -64,7 +64,7 @@ const WomensScreen=()=>{
     return(
         loading ? <h3 className={style.NewLoading}> loading...</h3> :
         
-        <div>
+        <div className={style.newsPage}>
             {/* <h1>News</h1> */}
         <section className={style.newsContainer}>
         <div className={style.newsOne}>

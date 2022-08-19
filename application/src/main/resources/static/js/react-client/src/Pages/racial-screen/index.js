@@ -43,8 +43,8 @@ const RacialScreen=()=>{
             setNewsEleven(result.data.articles[31]);
             setNewsTwelve(result.data.articles[28]);
             setNewsThirteen(result.data.articles[41]);
-            setNewsFourteen(result.data.articles[53]);
-            setNewsFifthteen(result.data.articles[68]);
+            setNewsFourteen(result.data.articles[76]);
+            setNewsFifthteen(result.data.articles[83]);
             setNewsSixteen(result.data.articles[91]);
         };
 
@@ -64,7 +64,7 @@ const RacialScreen=()=>{
     return(
         loading ? <h3 className={style.NewLoading}> loading...</h3> :
         
-        <div>
+        <div className={style.newsPage}>
             {/* <h1>News</h1> */}
         <section className={style.newsContainer}>
         <div className={style.newsOne}>

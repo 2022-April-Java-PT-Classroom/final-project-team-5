@@ -37,7 +37,7 @@ const LGBTQScreen=()=>{
             setNewsSix(result.data.articles[6]);
             setNewsSeven(result.data.articles[7]);
             setNewsEight(result.data.articles[8]);
-            setNewsNine(result.data.articles[9]);
+            setNewsNine(result.data.articles[18]);
             setNewsTen(result.data.articles[10]);
             setNewsEleven(result.data.articles[11]);
             setNewsTwelve(result.data.articles[12]);
@@ -63,7 +63,7 @@ const LGBTQScreen=()=>{
     return(
         loading ? <h3 className={style.NewLoading}> loading...</h3> :
         
-        <div>
+        <div className={style.newsPage}>
             {/* <h1>News</h1> */}
         <section className={style.newsContainer}>
             <div className={style.newsOne}>
