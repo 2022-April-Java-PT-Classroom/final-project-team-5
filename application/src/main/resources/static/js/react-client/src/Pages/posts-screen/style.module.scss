@@ -36,7 +36,7 @@
 
 .createPost{
     margin-top: 3rem;
-    padding-top: 20px;
+    padding-top: 55px;
     font-family: Bebas Neue;
     font-size: 30px;
     color: #ECF0F1;
@@ -47,7 +47,7 @@
     font-weight: lighter;
     color: #ECF0F1;
     font-size: 20px;
-    padding-bottom: 20px;
+    padding-bottom: .5px;
 }
 
 body {
@@ -113,6 +113,7 @@ body {
     margin: auto;
     z-index: +1;
     position: relative;
-    margin-bottom: 1rem;
+    padding-bottom: 5rem;
+    // margin-bottom: 5rem;
 }
 
