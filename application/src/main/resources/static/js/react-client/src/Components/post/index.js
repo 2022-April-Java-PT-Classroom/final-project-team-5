@@ -43,12 +43,11 @@ const AddPost=({ posts })=>{
                 onChange={handleChange}
                 placeholder="Title"
               />
-               <textarea 
-                required
+               <textarea
                 name="bodyOfPost"
                 value={addPostState.bodyOfPost}
                 onChange={handleChange}
-                placeholder="Write here"
+                placeholder="Write here"rows="10" cols="50" required
               />
               <button className={style.postButton} type="submit">Create Post</button>
               </form>

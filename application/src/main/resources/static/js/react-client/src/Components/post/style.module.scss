@@ -1,17 +1,23 @@
 .postForm{
-    align-self: center;
-    background-color: black;
-    border-radius: 2rem;
-    width: fit-content;
-    padding-top: 1rem;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 100px;
-    grid-template-rows: 70px auto; 
-    row-gap: 3px;
-    margin: auto;
-    z-index: -1;
-    position: relative;
+  padding-top: 2rem;
+  background-color: black;
+  border-radius: 3px;
+  width: fit-content;
+  height: auto;
+  margin: auto;
+  margin-top: .5rem;
+  margin-bottom: 2.5rem;
+  z-index: +1;
+  padding-bottom: 2px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  & textarea{
+      min-width: 20rem;
+      max-width: 20rem;
+      min-height: 5rem;
+      max-height: 20rem;
+  }
 }
 
 .postButton{
