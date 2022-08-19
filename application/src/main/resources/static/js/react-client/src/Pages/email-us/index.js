@@ -2,6 +2,13 @@ import React from "react";
 import style from './style.module.scss';
 
 const Email = () => {
+
+  const handleSubmit = (e) => {
+  
+    window.location.reload(false);
+   
+  }
+
     return (
       <div className={style.container}>
         <div className={style.callus}>
@@ -11,14 +18,14 @@ const Email = () => {
         </div>
         
         <div className={style.emailus}>
-            <form action="email-us">
+            <form onSubmit={handleSubmit}>
                 <div className={style.email}>
                         <h2 className={style.contactTitle}><i>&#9993;</i> E-mail</h2>
                         <input placeholder=" Email Address" type="email" required />
                         <textarea placeholder=" Message here" rows="10" cols="50" required></textarea>
                 </div>
                 <div class="btn">
-                    <button className={style.emailButton}  type='send'>Send</button>
+                    <button className={style.emailButton}   type='submit' >Send</button>
                 </div>
             </form>
         </div>
