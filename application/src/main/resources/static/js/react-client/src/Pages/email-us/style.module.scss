@@ -5,6 +5,10 @@
     padding-top: 100px;
 }
 
+.contactTitle{
+    font-size: 40px;
+}
+
 .phoneButton{
     justify-content: center;
     outline: 0;
@@ -100,7 +104,6 @@
 .emailus{
     padding-top: 25px;
     background-color: gray;
-    justify-content: center;
     width: 40%;
     min-width: 450px;
     border-radius: 2rem;
@@ -115,8 +118,9 @@
 .email{
     text-align: center;
     font-weight: bold;
-    justify-content: center;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .email h2{
@@ -124,13 +128,19 @@
 }
 
 .email input{
-    margin-bottom: 3px;
+    margin-bottom: 5px;
+    font-size: larger;
+}
+
+.email textarea{
+    font-size: larger;
+    font-weight: bold;
 }
 
 .emailButton{
     font-family: 'Bebas Neue';
     margin-left: 50%;
-    font-size: 16px;
+    font-size: 20px;
     outline: 0;
     padding: 5px 20px;
 }
@@ -154,7 +164,8 @@
 
 .callus p{
     letter-spacing: 0.5px;
-    font-size: 15px;
+    font-size: 18px;
+    font-style: italic;
 }
 
 .phoneButton{
