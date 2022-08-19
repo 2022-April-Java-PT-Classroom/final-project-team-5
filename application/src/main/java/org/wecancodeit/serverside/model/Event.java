@@ -14,6 +14,7 @@ public class Event {
     @GeneratedValue
     private Long id;
     private String eventTitle;
+    @Lob
     private String eventDescription;
     private String eventLocation;
     private String eventDate;
